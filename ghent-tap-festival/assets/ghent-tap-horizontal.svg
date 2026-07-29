@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 170" fill="none">
+  <title>Ghent Tap Festival horizontal logo</title>
+  <text x="28" y="92" font-family="Playfair Display, Georgia, serif" font-weight="500" font-size="72" fill="currentColor" letter-spacing="-0.6">Ghent</text>
+  <text x="276" y="92" font-family="Playfair Display, Georgia, serif" font-weight="500" font-size="72" fill="currentColor" letter-spacing="-0.8">Tap</text>
+  <path d="M286 118H338" stroke="#6FB7B1" stroke-width="7" stroke-linecap="square"/>
+  <path d="M386 118H438" stroke="#6FB7B1" stroke-width="7" stroke-linecap="square"/>
+  <path d="M348 110C358 98 368 98 378 110" stroke="#6FB7B1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30 130H642" stroke="#6FB7B1" stroke-width="2.5"/>
+  <text x="30" y="154" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" font-size="13" fill="currentColor" letter-spacing="3.8">FESTIVAL</text>
+</svg>
