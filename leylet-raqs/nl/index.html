@@ -196,6 +196,22 @@ em{font-style:italic}
 .cur p{font-size:clamp(16px,1.85vw,18px);color:var(--body);margin-bottom:18px;max-width:58ch}
 .cur-credit{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:22px}
 @media(max-width:780px){.cur-grid{grid-template-columns:1fr;gap:32px}.cur-figure{max-width:380px}}
+
+/* ── PAST EDITIONS ── */
+.editions-intro{font-family:var(--serif);font-style:italic;font-size:clamp(19px,2.5vw,26px);line-height:1.44;color:var(--ink);max-width:34ch;border-left:3px solid var(--pom);padding-left:24px;margin:0 0 clamp(40px,6vw,66px)}
+.timeline{display:flex;flex-direction:column}
+.ed{display:grid;grid-template-columns:100px 130px 1fr;gap:clamp(18px,4vw,40px);padding:clamp(24px,3.4vw,36px) 0;border-top:1px solid var(--hair);align-items:start}
+.ed:last-child{border-bottom:1px solid var(--hair)}
+.ed-year{font-family:var(--serif);font-weight:600;font-size:clamp(26px,3.2vw,34px);color:var(--ink);line-height:1}
+.ed-edition{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pom-ink);margin-top:8px}
+.ed-photo{width:100%;aspect-ratio:1;overflow:hidden;background:var(--hair)}
+.ed-photo img{width:100%;height:100%;object-fit:cover}
+.ed-body h3{font-family:var(--serif);font-weight:600;font-size:var(--h3);margin-bottom:8px;color:var(--ink)}
+.ed-body p{font-family:var(--body-serif);font-size:15.5px;color:var(--body);max-width:62ch;margin-bottom:10px}
+.ed-faculty{font-family:var(--sans);font-size:12.5px;letter-spacing:.02em;color:var(--muted);line-height:1.6}
+.ed-faculty strong{color:var(--pom-ink);font-weight:600}
+@media(max-width:700px){.ed{grid-template-columns:80px 100px 1fr}}
+@media(max-width:600px){.ed{grid-template-columns:64px 1fr;gap:14px 16px}.ed-edition{margin-top:4px}.ed-photo{grid-row:1 / 3}}
 .faq{max-width:820px}
 .faq details{border-top:1px solid var(--hair)}
 .faq details:last-child{border-bottom:1px solid var(--hair)}
@@ -256,6 +272,7 @@ em{font-style:italic}
     <a class="hide-sm" href="#festival">Het festival</a>
     <a class="hide-sm" href="#workshops">Workshops</a>
     <a class="hide-sm" href="#curator">Curator</a>
+    <a class="hide-sm" href="#editions">Vorige edities</a>
     <a class="hide-sm" href="#faq">FAQ</a>
     <a class="nav-cta" href="#join">Blijf op de hoogte →</a>
     <span class="nav-lang"><a href="../">EN</a> · <span class="on">NL</span></span>
@@ -371,6 +388,61 @@ em{font-style:italic}
       <p>Lenka is een Tsjechische danseres gevestigd in België en danst en doceert Raqs Sharqi al meer dan vijftien jaar — als soliste en binnen ensembles. Tien jaar lang danste ze aan de zijde van Jillina in Bellydance Evolution, met optredens in meer dan zestig shows over de hele wereld.</p>
       <p>Als specialiste in Golden Era-buikdans en gepassioneerd door de geschiedenis ervan, stelt ze Leylet Raqs samen als een liefdesbrief aan de kunst en de gemeenschap die haar levend houdt.</p>
       <p class="cur-credit">Curator van Leylet Raqs · Mede-georganiseerd met Shoonya Dance Centre</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VORIGE EDITIES ═══ -->
+<section class="section" id="editions">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Het verhaal tot nu toe</p>
+      <h2>Drie edities, sinds 2023.</h2>
+    </div>
+
+    <p class="editions-intro reveal">Elke editie brengt haar eigen gastdocenten van over de hele wereld, en haar eigen ingang tot de kunst van Raqs Sharqi.</p>
+
+    <div class="timeline">
+
+      <div class="ed reveal">
+        <div>
+          <p class="ed-year">2025</p>
+          <p class="ed-edition">Editie Drie · 14–16 nov</p>
+        </div>
+        <figure class="ed-photo"><img src="../assets/editions/2025-hendrik.jpg" alt="Hendrik Lebon tijdens een optreden op Leylet Raqs 2025" loading="lazy"/></figure>
+        <div class="ed-body">
+          <h3>Alle vormen van liefde</h3>
+          <p>Het festival voerde een Feedback Show in ter vervanging van een open showcase — een niet-competitief podium waar performers persoonlijke feedback kregen van de gastdocenten. Het thema van de Galashow, "alle vormen van liefde," sloot af met gastoptredens van Swapnil Dagliya en de Palestijnse dabkegroep ElKofieh48, met live muziek doorheen het hele festival.</p>
+          <p class="ed-faculty"><strong>Gastdocenten</strong> — Mercedes Nieto · Lurdiana · Mohanned Hawaz · Hendrik Lebon · Osama Abdulrasol &amp; Jamal Moussaid (live muziek) · Lenka Badriyah</p>
+        </div>
+      </div>
+
+      <div class="ed reveal">
+        <div>
+          <p class="ed-year">2024</p>
+          <p class="ed-edition">Editie Twee · 23–25 feb</p>
+        </div>
+        <figure class="ed-photo"><img src="../assets/editions/2024-julia-farid.jpg" alt="Julia Farid, gastdocent op Leylet Raqs 2024" loading="lazy"/></figure>
+        <div class="ed-body">
+          <h3>Golden Era, Egyptische folklore, en de sluier</h3>
+          <p>Gastdocenten reisden aan uit Oekraïne, Italië, België en Marokko — Golden Era-stijl, sluiertechniek, drum-solo fusion, en Baladi doorheen het weekend. Lenka sloot de workshops af met drie Egyptische folk- en karakterdansen, en het festival eindigde met een gesprek tussen twee van haar gastdocenten.</p>
+          <p class="ed-faculty"><strong>Gastdocenten</strong> — Julia Farid · Silvia Brazzoli · Luna · Hind Taoufiq · Lenka Badriyah</p>
+        </div>
+      </div>
+
+      <div class="ed reveal">
+        <div>
+          <p class="ed-year">2023</p>
+          <p class="ed-edition">Editie Eén · 17–19 feb</p>
+        </div>
+        <figure class="ed-photo"><img src="../assets/editions/2023-lou-pradas.jpg" alt="Lou Pradas, gastdocent op Leylet Raqs 2023" loading="lazy"/></figure>
+        <div class="ed-body">
+          <h3>Waar het allemaal begon</h3>
+          <p>De eerste Leylet Raqs — een lezing over Golden Era-melodieën, workshops isolatietechniek en Oriental Romance, en een show grotendeels opgebouwd uit de gemeenschap: dansers van alle niveaus die klassieke Raqs Sharqi, Egyptische folklore en fusion-stijlen brachten naast de gastdocenten.</p>
+          <p class="ed-faculty"><strong>Gastdocenten</strong> — Siobhan · Lou Pradas · Lenka Badriyah</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
