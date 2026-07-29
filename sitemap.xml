@@ -25,4 +25,16 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/ghent-tap-festival/nl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://festivals.shoonyadance.com/ghent-tap-festival/"/>
   </url>
+  <url>
+    <loc>https://festivals.shoonyadance.com/gidf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://festivals.shoonyadance.com/gidf/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/gidf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://festivals.shoonyadance.com/gidf/"/>
+  </url>
+  <url>
+    <loc>https://festivals.shoonyadance.com/gidf/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://festivals.shoonyadance.com/gidf/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/gidf/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://festivals.shoonyadance.com/gidf/"/>
+  </url>
 </urlset>
