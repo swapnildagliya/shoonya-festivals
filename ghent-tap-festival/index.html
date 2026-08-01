@@ -4,8 +4,8 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta name="theme-color" content="#0C1413"/>
-<title>Ghent Tap Festival — Tap Dance Festival in Ghent | Shoonya Dance Centre</title>
-<meta name="description" content="The Ghent Tap Festival — two full days of tap workshops across all levels, evening performances, and more. Hosted by Tapdance Promotion at Shoonya Dance Centre, Ghent. Edition Five returns in 2027."/>
+<title>Ghent Tap Festival — Tap Dance Festival in Ghent | Shoonya</title>
+<meta name="description" content="The Ghent Tap Festival — two full days of tap workshops, evening performances, and more. Hosted by Tapdance Promotion at Shoonya Dance Centre, Ghent."/>
 <link rel="canonical" href="https://festivals.shoonyadance.com/ghent-tap-festival/"/>
 <link rel="alternate" hreflang="en" href="https://festivals.shoonyadance.com/ghent-tap-festival/"/>
 <link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/ghent-tap-festival/nl/"/>
@@ -35,18 +35,20 @@
 <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,600;1,900&family=PT+Serif:ital,wght@0,400;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-rehearsal-poster.jpg"/>
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Festival",
+  "@type": "EventSeries",
   "name": "Ghent Tap Festival",
   "url": "https://festivals.shoonyadance.com/ghent-tap-festival/",
   "description": "An annual tap dance festival in Ghent — two full days of workshops across all levels, an evening performance, and more. Hosted by Tapdance Promotion at Shoonya Dance Centre.",
+  "image": "https://festivals.shoonyadance.com/ghent-tap-festival/og-image.jpg",
+  "inLanguage": "en-BE",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "startDate": "2027",
   "location": {
     "@type": "Place",
     "name": "Shoonya Dance Centre",
@@ -63,6 +65,62 @@
     { "@type": "Organization", "name": "Tapdance Promotion", "url": "http://tapdans.be" }
   ],
   "sameAs": [ "https://www.instagram.com/shoonyadance", "https://www.instagram.com/tapdancepromotion" ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "The venue",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shoonya Dance Centre, Stapelplein 41, 9000 Gent. All workshops and the evening performance take place under one roof — five studios and a theatre stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who it's for",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All levels welcome — every level, from beginner to advanced. No prior tap experience needed for the beginner and taster sessions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tap shoes",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hard tap shoes are required for workshops. If you don't have a pair yet, start with the free taster class first — then ask your local dance school or teacher about renting or buying."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Getting there",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 10-minute walk from Gent-Dampoort station. Street parking on Stapelplein, and the city centre a short walk away."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tickets & registration",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Registration opens ahead of each edition via shoonyadance.com. A Shoonya ID is required for all registrations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Questions",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reach us through the Shoonya contact page, or follow @shoonyadance for news and announcements."
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -138,11 +196,11 @@ em{font-style:italic}
 .nav-lang{font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.55)}
 .nav-lang .on{color:#fff}
 .nav-lang a:hover{color:#fff}
-@media(max-width:820px){.nav-links a.hide-sm{display:none}}
+@media(max-width:820px){.nav-links a.hide-sm{display:none}.nav-links{gap:clamp(10px,2vw,18px)}.nav-links a.keep-sm{font-size:12px;letter-spacing:.03em}}
 
 /* ── HERO ── */
 .hero{position:relative;min-height:clamp(580px,92vh,860px);display:flex;align-items:center;background:var(--dark);overflow:hidden}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 82%;opacity:.42}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.42}
 .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,20,19,.55),rgba(12,20,19,.62))}
 .hero-scrim.bottom{background:linear-gradient(0deg,rgba(12,20,19,.86),rgba(12,20,19,0) 46%)}
 .hero .wrap{position:relative;z-index:2;width:100%;padding-top:54px;padding-bottom:54px}
@@ -159,7 +217,6 @@ em{font-style:italic}
 .hero-when{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
 .hero-when .label{font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
-.hero-credit{position:absolute;right:14px;bottom:12px;z-index:3;font-family:var(--sans);font-size:9.5px;letter-spacing:.04em;color:rgba(255,255,255,.55);text-shadow:0 1px 2px rgba(0,0,0,.5)}
 
 /* ── ABOUT ── */
 .about-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(32px,6vw,76px);align-items:center}
@@ -168,9 +225,13 @@ em{font-style:italic}
 .about p{font-size:clamp(16px,1.8vw,18px);color:var(--body);margin-bottom:18px;max-width:56ch}
 .about-credit{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);line-height:1.85;margin-top:28px;border-top:1px solid var(--hair);padding-top:18px}
 .about-figure{position:relative}
-.about-figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 25%}
+.about-figure img,.about-figure video{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 25%}
 .about-figure figcaption{font-family:var(--sans);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:10px}
-@media(max-width:780px){.about-grid{grid-template-columns:1fr;gap:36px}.about-figure{order:-1}.about-figure img{aspect-ratio:3/2}}
+@media(max-width:780px){.about-grid{grid-template-columns:1fr;gap:36px}.about-figure{order:-1}.about-figure img,.about-figure video{aspect-ratio:3/2}}
+@media(prefers-reduced-motion:reduce){
+  .hero video,.about-figure video{display:none}
+  .hero{background-image:url("assets/hero-rehearsal-poster.jpg");background-size:cover;background-position:center}
+}
 
 /* ── PROGRAMME ── */
 .prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,26px)}
@@ -186,6 +247,18 @@ em{font-style:italic}
 .pcard-label .chip{width:9px;height:9px;background:var(--teal);flex:none}
 .pcard h3{font-size:var(--h3)}
 .pcard p{font-size:15px;color:var(--body);line-height:1.6}
+
+/* ── TEACHERS ── */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,26px)}
+@media(max-width:900px){.tgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.tgrid{grid-template-columns:1fr}}
+.tcard-photo{aspect-ratio:4/5;overflow:hidden;background:var(--hair)}
+.tcard-photo img{width:100%;height:100%;object-fit:cover}
+.tcard-body{padding-top:16px}
+.tcard-body h3{font-size:19px;margin-bottom:4px}
+.tcard-role{font-family:var(--sans);font-weight:600;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-ink);margin-bottom:10px;display:block}
+.tcard-body p{font-size:14.5px;color:var(--body);line-height:1.58}
+.tcard-credit{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:8px}
 
 /* ── EDITION FIVE ── */
 .next{position:relative;overflow:hidden;text-align:center}
@@ -246,9 +319,10 @@ em{font-style:italic}
     <span class="gtf-lockup gtf-compact" aria-hidden="true">G<em>T</em>F</span>
   </a>
   <nav class="nav-links" aria-label="Primary">
-    <a class="hide-sm" href="#about">About</a>
+    <a class="keep-sm" href="#about">About</a>
     <a class="hide-sm" href="#festival">Programme</a>
-    <a class="hide-sm" href="#practical">Practical</a>
+    <a class="hide-sm" href="#teachers">Guest Teachers</a>
+    <a class="keep-sm" href="#practical">Practical</a>
     <a class="hide-sm" href="#editions">Past editions</a>
     <a class="nav-cta" href="#next">Edition 2027 →</a>
     <span class="nav-lang"><span class="on">EN</span> · <a href="nl/">NL</a></span>
@@ -257,10 +331,9 @@ em{font-style:italic}
 
 <!-- ═══ HERO ═══ -->
 <section class="hero" aria-label="Ghent Tap Festival">
-  <img class="hero-bg" src="assets/hero-tap.jpg" alt="" fetchpriority="high"/>
+  <video class="hero-bg" autoplay muted loop playsinline preload="metadata" poster="assets/hero-rehearsal-poster.jpg" src="assets/hero-rehearsal.mp4" aria-hidden="true"></video>
   <div class="hero-scrim"></div>
   <div class="hero-scrim bottom"></div>
-  <span class="hero-credit">© Stijn Dejonckheere</span>
   <div class="wrap">
     <p class="hero-eyebrow">Ghent's tap dance festival · Belgium</p>
     <h1><span class="word">Ghent</span> <span class="word gtf-tap">Tap</span> <span class="word">Festival</span></h1>
@@ -296,8 +369,9 @@ em{font-style:italic}
       </p>
     </div>
     <figure class="about-figure reveal">
-      <img src="assets/hero-tap.jpg" alt="Tap performance at the Ghent Tap Festival" loading="lazy"/>
-      <figcaption>Photography · Stijn Dejonckheere</figcaption>
+      <img src="assets/hero-tap.jpg" alt="Tap performance at the Ghent Tap Festival" loading="lazy" width="931" height="1400"/>
+      <figcaption>Photography &middot; Stijn Dejonckheere</figcaption>
+      <figcaption>From a Ghent Tap Festival rehearsal</figcaption>
     </figure>
   </div>
 </section>
@@ -314,19 +388,19 @@ em{font-style:italic}
     <div class="prog-grid">
       <article class="pcard reveal">
         <div class="pcard-photo">
-          <img src="assets/hero-tap.jpg" alt="Tap dance workshop at Shoonya Dance Centre" loading="lazy" style="object-position:center 70%"/>
+          <img src="assets/estefania-porqueras.jpg" alt="Estefania Porqueras, guest teacher at the Ghent Tap Festival" loading="lazy" style="object-position:center 32%" width="1000" height="1400"/>
         </div>
         <div class="pcard-bar"></div>
         <div class="pcard-body">
           <p class="pcard-label"><span class="chip"></span>Workshops</p>
           <h3>Two full days, every level</h3>
-          <p>Workshops across beginner, intermediate, and advanced levels — taught by the Tapdance Promotion team and invited guest teachers. Each edition brings its own mix of rhythm work, choreography, and style.</p>
+          <p>Workshops across beginner, intermediate, and advanced levels — taught by the <span translate="no">Tapdance Promotion</span> team and invited guest teachers. Each edition brings its own mix of rhythm work, choreography, and style.</p>
         </div>
       </article>
 
       <article class="pcard reveal">
         <div class="pcard-photo">
-          <img src="assets/hero-tap.jpg" alt="Evening performance at the Ghent Tap Festival" loading="lazy" style="object-position:center 30%"/>
+          <img src="assets/jep-melendez.jpg" alt="Jep Meléndez performing body percussion at the Ghent Tap Festival" loading="lazy" style="object-position:center 35%" width="1400" height="1050"/>
         </div>
         <div class="pcard-bar"></div>
         <div class="pcard-body">
@@ -338,7 +412,7 @@ em{font-style:italic}
 
       <article class="pcard reveal">
         <div class="pcard-photo">
-          <img src="assets/hero-tap.jpg" alt="Tap dance community at Shoonya Dance Centre, Ghent" loading="lazy" style="object-position:center 50%"/>
+          <img src="assets/la-liz.jpg" alt="La Liz leading a palmas workshop at the Ghent Tap Festival" loading="lazy" style="object-position:center 20%" width="667" height="667"/>
         </div>
         <div class="pcard-bar"></div>
         <div class="pcard-body">
@@ -351,9 +425,78 @@ em{font-style:italic}
   </div>
 </section>
 
+<!-- ═══ TEACHERS ═══ -->
+<section class="section paper" id="teachers">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Who's taught here</p>
+      <h2>Invited guest teachers.</h2>
+      <p>Each edition brings its own international guest artists to teach and perform at Shoonya. Here are some of the teachers past editions have hosted.</p>
+    </div>
+
+    <div class="tgrid">
+      <article class="tcard reveal">
+        <div class="tcard-photo"><img src="assets/josh-hilberman.jpg" alt="Josh Hilberman" loading="lazy" style="object-position:center 8%" width="961" height="967"/></div>
+        <div class="tcard-body">
+          <h3>Josh Hilberman</h3>
+          <span class="tcard-role">Guest teacher · 2024 &amp; 2026</span>
+          <p>Tap dance artist based in Liège. Co-founded the Claquettes Club and curates the Tap Liège Festival. Studied for decades under Brenda Bufalino and taught prize-winning dancemaker Michelle Dorrance.</p>
+        </div>
+      </article>
+
+      <article class="tcard reveal">
+        <div class="tcard-photo"><img src="assets/peter-kuit.jpg" alt="Peter Kuit" loading="lazy" style="object-position:center 10%" width="684" height="1024"/></div>
+        <div class="tcard-body">
+          <h3>Peter Kuit</h3>
+          <span class="tcard-role">Guest teacher · 2026</span>
+          <p>Dutch tap dancer since 1977 — from house parties and a speed-metal band to touring stadiums with Candy Dulfer and eight years with the David Kweksilber Big Band. Teaching tap for over 40 years.</p>
+        </div>
+      </article>
+
+      <article class="tcard reveal">
+        <div class="tcard-photo"><img src="assets/la-liz.jpg" alt="La Liz" loading="lazy" style="object-position:center 20%" width="667" height="667"/></div>
+        <div class="tcard-body">
+          <h3>La Liz</h3>
+          <span class="tcard-role">Guest teacher · 2026</span>
+          <p>Brings over 25 years of flamenco experience. Taught "Hands on Rhythm: Clap &amp; Groove" — flamenco handclapping as a percussive art form, open to every dance background.</p>
+        </div>
+      </article>
+
+      <article class="tcard reveal">
+        <div class="tcard-photo"><img src="assets/estefania-porqueras.jpg" alt="Estefania Porqueras" loading="lazy" style="object-position:center 8%" width="1000" height="1400"/></div>
+        <div class="tcard-body">
+          <h3>Estefania Porqueras</h3>
+          <span class="tcard-role">Guest teacher · 2025</span>
+          <p>Barcelona-based tap dancer, choreographer, and educator. Artistic director of Dance Company UNUM Project, performer with Camut Band, and faculty at Escola Luthier Barcelona.</p>
+        </div>
+      </article>
+
+      <article class="tcard reveal">
+        <div class="tcard-photo"><img src="assets/jep-melendez.jpg" alt="Jep Meléndez" loading="lazy" style="object-position:center 35%" width="1400" height="1050"/></div>
+        <div class="tcard-body">
+          <h3>Jep Meléndez</h3>
+          <span class="tcard-role">Guest teacher · 2024 &amp; 2025</span>
+          <p>Spanish body percussionist, tap and sand dancer. Principal dancer with Camut Band and artistic director of Cambuyón, staged at the Edinburgh Fringe and New York's New Victory Theater.</p>
+          <span class="tcard-credit">© Aarón S. Ramos</span>
+        </div>
+      </article>
+
+      <article class="tcard reveal">
+        <div class="tcard-photo"><img src="assets/joelle-ribant.jpg" alt="Joëlle Ribant" loading="lazy" style="object-position:center 15%" width="848" height="1400"/></div>
+        <div class="tcard-body">
+          <h3>Joëlle Ribant</h3>
+          <span class="tcard-role">Guest teacher · 2023 &amp; 2024</span>
+          <p>Brussels-based tap dancer. Taught advanced and intermediate levels, including the "Begin the Beguine" advanced choreography workshop.</p>
+          <span class="tcard-credit">© Philippe Tollet</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ EDITION FIVE · 2027 ═══ -->
 <section class="section dark next" id="next">
-  <img class="next-bg" src="assets/hero-tap.jpg" alt="" loading="lazy"/>
+  <img class="next-bg" src="assets/hero-tap.jpg" alt="" loading="lazy" width="931" height="1400"/>
   <div class="next-scrim"></div>
   <div class="wrap reveal">
     <p class="eyebrow">The next edition</p>
@@ -383,7 +526,7 @@ em{font-style:italic}
       </div>
       <div class="prac-item reveal">
         <h3>Who it's for</h3>
-        <p>All levels welcome. Workshops are labelled by level — beginner, intermediate, advanced. No prior tap experience needed for the beginner and taster sessions.</p>
+        <p>All levels welcome — every level, from beginner to advanced. No prior tap experience needed for the beginner and taster sessions.</p>
       </div>
       <div class="prac-item reveal">
         <h3>Tap shoes</h3>
@@ -424,7 +567,7 @@ em{font-style:italic}
         </div>
         <div class="ed-body">
           <h3>"Not Dead Yet" — Josh Hilberman at Shoonya</h3>
-          <p>Josh Hilberman brought his show <em>Not Dead Yet: Dances &amp; Stories</em> to the Shoonya Theatre for two sold-out performances on the Saturday evening. The weekend's workshops featured Alexandre van Goethem, Peter Kuit, Josh Hilberman, and La Liz leading palmas — alongside a free taster class open to all.</p>
+          <p>Josh Hilberman brought his show <em>Not Dead Yet: Dances &amp; Stories</em>, spanning generations of tap history, to the Shoonya Theatre for two performances on the Saturday evening. The weekend's workshops featured Alexandre Van Goethem, Peter Kuit — tap dancing since 1977, from house parties to touring stadiums with Candy Dulfer — Josh Hilberman, and La Liz leading palmas, alongside a free taster class open to all.</p>
         </div>
       </div>
 
@@ -434,8 +577,8 @@ em{font-style:italic}
           <p class="ed-edition">Third Edition</p>
         </div>
         <div class="ed-body">
-          <h3>Open Tap Night at the Minard</h3>
-          <p>The programme expanded with international guests and an Open Tap Night — performances and a cutting contest — at the Minard theatre in the heart of Ghent. Workshops across the weekend with Jep Melendez, Estephania, and Teddy.</p>
+          <h3>A Pies y Manos at the Minard</h3>
+          <p>Estefania Porqueras (Barcelona) taught tap advanced, choreography, and intermediate levels, Jep Meléndez led body percussion, and Alexandre Van Goethem taught advanced beginners. The Sunday performance, <em>A Pies y Manos</em> — Jep Meléndez, Benito Cabrera, and Tomás Fariña blending Canarian music, tap, and body-drumming — played at the Minard theatre, with an Open Stage inviting the community to perform on the Saturday.</p>
         </div>
       </div>
 
@@ -446,7 +589,7 @@ em{font-style:italic}
         </div>
         <div class="ed-body">
           <h3>The community returns</h3>
-          <p>Jep Melendez, Josh Hilberman, and Joëlle Ribant led workshops across the weekend, drawing dancers from Belgium, the Netherlands, and beyond. The Open Tap Night featured a cutting contest on the Saturday evening.</p>
+          <p>Jep Meléndez taught body percussion, Josh Hilberman led workshops drawing on decades studying with tap legends including Brenda Bufalino, and Joëlle Ribant taught the advanced "Begin the Beguine" choreography workshop, drawing dancers from Belgium, the Netherlands, and beyond. The Open Tap Night featured a cutting contest on the Saturday evening.</p>
         </div>
       </div>
 
@@ -457,7 +600,7 @@ em{font-style:italic}
         </div>
         <div class="ed-body">
           <h3>Where it all began</h3>
-          <p>The first Ghent Tap Festival — a new home for the tap dance community in Ghent, at Shoonya Dance Centre.</p>
+          <p>The first Ghent Tap Festival brought Laia Molins (Barcelona) and Joëlle Ribant (Brussels) for advanced and intermediate workshops, Alexandre Van Goethem for advanced beginners and the Tap Jam, and a free Tap Dance Initiation with Teddy Robinet — a new home for the tap dance community in Ghent.</p>
         </div>
       </div>
 
@@ -470,9 +613,9 @@ em{font-style:italic}
 <footer class="foot" id="contact">
   <div class="wrap">
     <p class="foot-label">
-      <img src="assets/shoonya-oo-mark-white.png" alt="">
+      <img src="assets/shoonya-oo-mark-white.png" alt="" width="2084" height="2084">
       Shoonya Dance Centre
-      <img src="assets/shoonya-oo-mark-white.png" alt="">
+      <img src="assets/shoonya-oo-mark-white.png" alt="" width="2084" height="2084">
     </p>
     <p class="foot-tag">Ghent's tap dance festival — two full days of workshops, performances, and community, every year at Shoonya Dance Centre.</p>
     <p class="foot-org">
@@ -490,6 +633,8 @@ em{font-style:italic}
         @shoonyadance
       </a>
       <a href="https://www.shoonyadance.com/contact" target="_blank" rel="noopener noreferrer">Contact us</a>
+      <a href="/">All festivals</a>
+      <a href="https://www.shoonyadance.com" target="_blank" rel="noopener noreferrer">Shoonya Dance Centre</a>
     </div>
     <div class="foot-meta">
       <span>Shoonya Dance Centre · Stapelplein 41, 9000 Gent · 10-min walk from Gent-Dampoort</span>
@@ -500,6 +645,12 @@ em{font-style:italic}
 </footer>
 
 <script>
+/* reduced motion — CSS hides the video; this also stops playback + network fetch */
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.querySelectorAll('video').forEach(function(v){
+    v.removeAttribute('autoplay'); v.preload='none'; v.pause();
+  });
+}
 (function(){
   var els = document.querySelectorAll('.reveal');
   if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){

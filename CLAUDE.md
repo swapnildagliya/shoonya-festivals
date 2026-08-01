@@ -53,11 +53,11 @@ People search **"bellydance"**, not "Raqs Sharqi" — so the page pairs both eve
 ### About-section photo
 Uses `assets/lenka-red.jpg` — Lenka Badriyah, red-costume studio portrait (compressed from `_Assets/.../teacher-photos/lenka-badriyah/3.jpg`, 1000×1400/q80). Distinct from the pink/green curator-section shot. **No confirmed photographer** on this frame — same studio shoot as the © Isabelle Hanneuse curator photo but not verified, so no visible credit. (The old watermarked festival-dancer `festival.jpg` was removed.)
 
-### "Past editions / guest artists" section — investigated & SKIPPED (2026-06-20)
-Swapnil considered a per-edition guest-artist section; **decided to skip** to keep the page evergreen. **Image-availability finding (so it isn't re-investigated):** Drive has per-edition folders (2023 showcase ~190 photos · 2024 galashow videos · 2025 ~11 high-res by Stijn Dejonckheere) but they are **unlabeled** (stage/showcase shots, photographer-timestamp filenames) — there is **no confirmed guest-teacher roster per edition and no named artist portraits**. The "Leylet Raqs 2024-N.png" files are **blank design templates**, not artist cards. Only Lenka is reliably identified. Building a *named* artist grid would need Swapnil to supply the lineup + photos first. Drive: 2025 folder `1QqjSKNu0ByTPWk1TtCi_iENCbbTT50jX` · 2024 `1qcKbgAcEuTyJiDE6rIlBv2mX6fE-RKrj` · 2023 showcase `1gIkQlYPluhmyLAZ9IS6xBv82gWk764Ir`; performer-name spreadsheets exist for 2025 (galashow / opening-party — performers ≠ workshop teachers).
+### "Past editions" section — built 2026-07-29 (supersedes the 2026-06-20 skip decision)
+A Past Editions section now exists on both language pages (`#editions`), covering all four editions to date — 2023 Edition One, 2024 Edition Two, 2025 Edition Three, 2026 Heritage Edition Four — each with its historical date range, guest-teacher list and a representative photo in `assets/editions/`. **Image-availability finding (kept for history):** Drive has per-edition folders (2023 showcase ~190 photos · 2024 galashow videos · 2025 ~11 high-res by Stijn Dejonckheere) but they are **unlabeled** (stage/showcase shots, photographer-timestamp filenames) — at the time of the 2026-06-20 investigation there was **no confirmed guest-teacher roster per edition and no named artist portraits**; the 2026-07-29 build resolved this with Swapnil-supplied lineups plus one representative photo per edition. The "Leylet Raqs 2024-N.png" files are **blank design templates**, not artist cards. Drive: 2025 folder `1QqjSKNu0ByTPWk1TtCi_iENCbbTT50jX` · 2024 `1qcKbgAcEuTyJiDE6rIlBv2mX6fE-RKrj` · 2023 showcase `1gIkQlYPluhmyLAZ9IS6xBv82gWk764Ir`; performer-name spreadsheets exist for 2025 (galashow / opening-party — performers ≠ workshop teachers).
 
-### Evergreen design principle
-The page carries **no specific edition dates** — it describes the festival format so it stays live and useful year-round. Edition-specific info (dates, teachers, ticket links) is announced via Instagram only.
+### Evergreen design principle (revised 2026-07-29)
+The page describes the festival format so it stays live and useful year-round. **Historical edition dates are allowed** — the Past Editions section lists all four past date ranges. The rule is **no FUTURE edition dates or promises**: upcoming-edition info (dates, teachers, ticket links) is still announced via Instagram only.
 
 ### Weekend format (confirmed from 2025 programme)
 | Day | Programme |
@@ -75,12 +75,13 @@ All images in `leylet-raqs/assets/` are web-compressed (≤1400px / q80 — D-03
 
 | File | Use |
 |---|---|
-| `hero.jpg` | Page hero (current: June 2024 group shot) |
+| `hero.jpg` | Page hero (current: June 2024 group shot) — visible `© Stijn Dejonckheere` credit overlay added 2026-08-01 |
 | `festival.jpg` | About / atmosphere section |
 | `veil.jpg` | Veil / second atmosphere |
 | `lenka.jpg` | Teacher / Lenka Badriyah portrait |
 | `shoonya-oo-mark-white.png` | Footer oo-mark |
 | `favicon.ico` / `favicon.png` / `apple-touch-icon.png` | Site favicons |
+| `editions/2023-lou-pradas.jpg` · `2024-julia-farid.jpg` · `2025-hendrik.jpg` · `2026-nisaa.jpg` | Past Editions timeline photos (added 2026-07-29; compressed to 400px long-edge / q80 on 2026-08-01) |
 
 **Potential hero upgrade:** 2025 Stijn Dejonckheere photos in Google Drive folder `1WFwSvbrbDQ6aqx8sz3zx4kcuHohvwRbI`. Download, compress to 1400px/q80, replace `hero.jpg`, re-render og-image.
 
@@ -97,6 +98,30 @@ Every edit to `index.html` must be mirrored in `nl/index.html` in the same sessi
 
 ### Known trap: first edition year
 The Google Drive contains a file named "Leylet Raqs 2022 Final Budget" — this is a **planning document from Sept 2022**, not a 2022 event. The first actual festival was **February 17–19, 2023**. Always say "since 2023."
+
+---
+
+## Ghent Tap Festival (2026-08-01)
+
+- **Name is never translated:** "Ghent Tap Festival" in both languages (a past NL draft renamed it "Gent Tap Festival" — wrong, canonical per `Event Submission/docs/teacher-data.md`).
+- **Hero = rehearsal video** (`assets/hero-rehearsal.mp4`, 8s cut from Swapnil's 4K rehearsal footage). The *A Pies y Manos* promo reel was rejected as hero (third-party typography, 2.3s loop) and deleted from assets. About figure = `hero-tap.jpg` with visible "Photography · Stijn Dejonckheere" credit.
+- **Photo credits:** Jep Meléndez © Aarón S. Ramos (baked credit cropped by card); Joëlle Ribant © Philippe Tollet (left watermark band cropped off the file 2026-08-01; credit shown in card).
+- `tapdans.be` has no valid TLS (cert is `*.axc.eu`) — links stay `http://` until that's fixed.
+- Teacher bios + edition histories (2023–2026) **confirmed correct by Swapnil 2026-08-01**.
+
+## GIDF (2026-08-01)
+
+- Name: **Gent India Dans Festival** everywhere; JSON-LD organizer = ABC (abcbollywoodbelgium.com) + Shoonya.
+- **Opening Party card is a 6.5s muted video loop** (`assets/opening-party-loop.mp4`, cut from `GIDF/2026/gidf-hub/_archive/images-2026/Opening Party.MOV` — real 2026 party). Guest-artist performance photos ≠ the party; Swapnil rejected those for this card.
+- Edition-row photos are real frames (2023 stage © **Michael Backaert** — credit required, shown in row; 2024 Kalbeliya circle; 2025 community group — sources: Drive synced folder `~/Library/CloudStorage/GoogleDrive-info@shoonyadance.com/My Drive/Gent India dans festival/`). The old text-heavy promo banners were deleted.
+- FAQ (5 Q&As) approved by Swapnil 2026-08-01; visible + FAQPage JSON-LD, both languages.
+- Faculty rosters, Kathakali/Julien 2024, the Shampa visa mentions and the Swapnil Dec-2025 quote are all **confirmed by Swapnil 2026-08-01** — do not strip them as "unverifiable".
+- ⚠️ The archive photo `GF23 Stijn ABC/20230721-*` set and `ALT-opening-party-garba-group.jpg` are **Gentse Feesten, NOT GIDF** — never caption them as GIDF.
+
+## Hub (2026-08-01)
+
+- Root `index.html` + `assets/` (3 hero mp4s, 3 loop mp4s, 6 posters) are live; hub is in `sitemap.xml`.
+- CSS ordering trap: any `@media(prefers-reduced-motion)` `video{display:none}` rule must come **after** the base `img,video{display:block}` rule or it silently loses on source order.
 
 ---
 

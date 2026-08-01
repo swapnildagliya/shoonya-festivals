@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://festivals.shoonyadance.com/</loc>
+  </url>
+  <url>
     <loc>https://festivals.shoonyadance.com/leylet-raqs/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://festivals.shoonyadance.com/leylet-raqs/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/leylet-raqs/nl/"/>

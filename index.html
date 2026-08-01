@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="theme-color" content="#0A0A0A"/>
+<title>Shoonya Festivals — Bellydance, Tap &amp; Indian Dance in Ghent</title>
+<meta name="description" content="Three annual dance festivals at Shoonya Dance Centre, Ghent — Leylet Raqs (bellydance), the Ghent Tap Festival, and GIDF (Indian dance). Workshops, showcases and community, every year."/>
+<link rel="canonical" href="https://festivals.shoonyadance.com/"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Shoonya Festivals — Bellydance, Tap &amp; Indian Dance in Ghent"/>
+<meta property="og:description" content="Three annual dance festivals at Shoonya Dance Centre, Ghent. Workshops, showcases and community, every year."/>
+<meta property="og:url" content="https://festivals.shoonyadance.com/"/>
+<meta property="og:site_name" content="Shoonya Festivals"/>
+<meta property="og:locale" content="en_BE"/>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shoonyadance.com/#organization",
+      "name": "Shoonya Dance Centre",
+      "url": "https://www.shoonyadance.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Stapelplein 41",
+        "postalCode": "9000",
+        "addressLocality": "Gent",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "Place",
+      "@id": "https://www.shoonyadance.com/#place",
+      "name": "Shoonya Dance Centre",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Stapelplein 41",
+        "postalCode": "9000",
+        "addressLocality": "Gent",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "EventSeries",
+      "name": "Leylet Raqs",
+      "url": "https://festivals.shoonyadance.com/leylet-raqs/",
+      "description": "Ghent's international Raqs Sharqi festival — workshops, live music and a galashow, in the heart of the city.",
+      "location": { "@id": "https://www.shoonyadance.com/#place" },
+      "organizer": { "@id": "https://www.shoonyadance.com/#organization" }
+    },
+    {
+      "@type": "EventSeries",
+      "name": "Ghent Tap Festival",
+      "url": "https://festivals.shoonyadance.com/ghent-tap-festival/",
+      "description": "Two full days of tap — workshops across every level and an evening performance that fills the Shoonya stage.",
+      "location": { "@id": "https://www.shoonyadance.com/#place" },
+      "organizer": { "@id": "https://www.shoonyadance.com/#organization" }
+    },
+    {
+      "@type": "EventSeries",
+      "name": "Gent India Dans Festival",
+      "url": "https://festivals.shoonyadance.com/gidf/",
+      "description": "Three days of Indian dance every May — workshops, a gala showcase and an opening party that runs until late.",
+      "location": { "@id": "https://www.shoonyadance.com/#place" },
+      "organizer": { "@id": "https://www.shoonyadance.com/#organization" }
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#B564F7; --purple-ink:#D7AEF6;
+  --pom:#E0577A; --pom-ink:#F0A6B8;
+  --teal:#6FB7B1; --teal-ink:#9FD6D0;
+  --white:#FFFFFF; --dark:#0A0A0A; --paper:#F7F0E6;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--dark);color:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+/* Reduced motion — must follow the img,video base rule so display:none wins on source order */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.01ms!important}
+  video{display:none}
+  .opening-bg{background-image:url('assets/poster-hero-leylet.jpg');background-size:cover;background-position:center}
+  .fsection.pom .fbg{background-image:url('assets/poster-leylet-raqs-loop.jpg');background-size:cover;background-position:center}
+  .fsection.teal .fbg{background-image:url('assets/poster-ghent-tap-loop.jpg');background-size:cover;background-position:center}
+  .fsection.purple .fbg{background-image:url('assets/poster-gidf-loop.jpg');background-size:cover;background-position:center}
+  .marquee-track{animation:none}
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,44px);position:relative;z-index:2}
+
+/* ═══ OPENING HERO ═══ */
+.opening{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.opening-bg{position:absolute;inset:0}
+.opening-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}
+.opening-bg video.active{opacity:1}
+.opening-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.78) 60%,rgba(10,10,10,.96))}
+.opening-eyebrow{position:relative;z-index:2;font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:26px}
+.opening h1{position:relative;z-index:2;font-family:var(--serif);font-weight:700;font-size:clamp(46px,10vw,128px);line-height:.98;letter-spacing:-.02em}
+.opening h1 .line{display:block;overflow:hidden}
+.opening h1 span{display:inline-block;opacity:0;transform:translateY(100%);animation:rise 1s var(--ease) forwards}
+.opening h1 .line:nth-child(2) span{animation-delay:.12s}
+.opening h1 .accent{font-style:italic;font-weight:500;background:linear-gradient(90deg,var(--pom),var(--teal),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes rise{to{opacity:1;transform:none}}
+.opening p{position:relative;z-index:2;font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.2vw,23px);color:rgba(255,255,255,.82);max-width:44ch;margin:26px auto 0}
+.scroll-cue{position:absolute;bottom:38px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.scroll-cue .bar{width:1px;height:34px;background:linear-gradient(180deg,rgba(255,255,255,.7),transparent);animation:cuepulse 1.8s ease-in-out infinite}
+@keyframes cuepulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+/* ═══ MARQUEE ═══ */
+.marquee{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);padding:16px 0;overflow:hidden;background:rgba(255,255,255,.02)}
+.marquee-track{display:flex;width:max-content;animation:scroll-x 42s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scroll-x{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee span{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(16px,2vw,22px);color:rgba(255,255,255,.5);padding:0 28px;white-space:nowrap}
+.marquee span.dot{font-style:normal;color:rgba(255,255,255,.25)}
+
+/* ═══ FESTIVAL SECTIONS ═══ */
+.fsection{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;border-top:1px solid rgba(255,255,255,.08)}
+.fbg{position:absolute;inset:0}
+.fbg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:kbfade 22s ease-in-out infinite}
+.fbg img:nth-child(1){animation-delay:-0s}
+.fbg img:nth-child(2){animation-delay:-5.5s}
+.fbg img:nth-child(3){animation-delay:-11s}
+.fbg img:nth-child(4){animation-delay:-16.5s}
+.fbg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fscrim{position:absolute;inset:0}
+.fscrim.pom{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(20,8,12,.42) 55%,rgba(20,8,12,.25))}
+.fscrim.teal{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(8,17,16,.42) 55%,rgba(8,17,16,.25))}
+.fscrim.purple{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(15,8,20,.42) 55%,rgba(15,8,20,.25))}
+.fcontent{position:relative;z-index:2;width:100%;padding:clamp(48px,9vw,100px) 0 clamp(56px,9vw,96px)}
+.fcredit{position:absolute;right:14px;top:14px;z-index:3;font-family:var(--sans);font-size:9.5px;letter-spacing:.04em;color:rgba(255,255,255,.5)}
+.feyebrow{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:20px;opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.fsection.pom .feyebrow{color:var(--pom-ink)}
+.fsection.teal .feyebrow{color:var(--teal-ink)}
+.fsection.purple .feyebrow{color:var(--purple-ink)}
+.ftitle{font-family:var(--serif);font-weight:700;font-size:clamp(42px,8.4vw,108px);line-height:.98;letter-spacing:-.015em;max-width:14ch;opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease) .08s,transform .8s var(--ease) .08s}
+.ftag{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.1vw,23px);color:rgba(255,255,255,.85);max-width:46ch;margin:22px 0 30px;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease) .16s,transform .8s var(--ease) .16s}
+.fstats{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease) .22s,transform .8s var(--ease) .22s}
+.fstat{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.32);padding:9px 16px;display:inline-flex;align-items:center;gap:9px}
+.fstat .dot{width:6px;height:6px;border-radius:50%}
+.fsection.pom .fstat .dot{background:var(--pom)}
+.fsection.teal .fstat .dot{background:var(--teal)}
+.fsection.purple .fstat .dot{background:var(--purple)}
+.fcta{display:inline-flex;align-items:center;gap:11px;font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:16px 30px;border:1px solid #fff;color:#fff;transition:background .3s,color .3s;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease) .3s,transform .8s var(--ease) .3s,background .3s,color .3s}
+.fcta:hover{background:#fff;color:var(--dark)}
+.fcta svg{width:16px;height:16px;transition:transform .25s var(--ease)}
+.fcta:hover svg{transform:translateX(4px)}
+.fsection.in .feyebrow,.fsection.in .ftitle,.fsection.in .ftag,.fsection.in .fstats,.fsection.in .fcta{opacity:1;transform:none}
+
+/* ═══ FOOTER ═══ */
+.foot{position:relative;border-top:1px solid rgba(255,255,255,.1);padding:clamp(40px,6vw,60px) 0;text-align:center;background:var(--dark)}
+.foot p{font-family:var(--sans);font-size:13px;color:rgba(255,255,255,.5)}
+.foot a{border-bottom:1px solid currentColor;transition:opacity .15s;color:rgba(255,255,255,.8)}
+.foot a:hover{opacity:.65}
+</style>
+</head>
+<body>
+
+<!-- ═══ OPENING ═══ -->
+<section class="opening">
+  <div class="opening-bg" id="openingBg" aria-hidden="true">
+    <video class="active" muted playsinline preload="auto" poster="assets/poster-hero-leylet.jpg" src="assets/hero-leylet.mp4"></video>
+    <video muted playsinline preload="metadata" poster="assets/poster-hero-ghenttap.jpg" src="assets/hero-ghenttap.mp4"></video>
+    <video muted playsinline preload="metadata" poster="assets/poster-hero-gidf.jpg" src="assets/hero-gidf.mp4"></video>
+  </div>
+  <div class="opening-scrim"></div>
+  <p class="opening-eyebrow">Shoonya Dance Centre · Ghent, Belgium</p>
+  <h1>
+    <span class="line"><span>Three festivals.</span></span>
+    <span class="line"><span class="accent">One dance floor.</span></span>
+  </h1>
+  <p>Bellydance, tap, and Indian dance — a year-round calendar of workshops, showcases and community, all under one roof.</p>
+  <div class="scroll-cue"><span>Scroll</span><span class="bar"></span></div>
+</section>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Raqs Sharqi</span><span class="dot">·</span>
+    <span>Baladi</span><span class="dot">·</span>
+    <span>Shim Sham</span><span class="dot">·</span>
+    <span>Kalbeliya</span><span class="dot">·</span>
+    <span>Golden Era</span><span class="dot">·</span>
+    <span>Chhau</span><span class="dot">·</span>
+    <span>Paddle &amp; Roll</span><span class="dot">·</span>
+    <span>Kathak</span><span class="dot">·</span>
+    <span>Folklore</span><span class="dot">·</span>
+    <span>Bhangra</span><span class="dot">·</span>
+    <span>Raqs Sharqi</span><span class="dot">·</span>
+    <span>Baladi</span><span class="dot">·</span>
+    <span>Shim Sham</span><span class="dot">·</span>
+    <span>Kalbeliya</span><span class="dot">·</span>
+    <span>Golden Era</span><span class="dot">·</span>
+    <span>Chhau</span><span class="dot">·</span>
+    <span>Paddle &amp; Roll</span><span class="dot">·</span>
+    <span>Kathak</span><span class="dot">·</span>
+    <span>Folklore</span><span class="dot">·</span>
+    <span>Bhangra</span><span class="dot">·</span>
+  </div>
+</div>
+
+<main>
+<!-- ═══ LEYLET RAQS ═══ -->
+<section class="fsection pom reveal-section">
+  <div class="fbg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/poster-leylet-raqs-loop.jpg">
+      <source src="assets/leylet-raqs-loop.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <div class="fscrim pom"></div>
+  <div class="wrap fcontent">
+    <p class="feyebrow">Bellydance · Raqs Sharqi</p>
+    <h2 class="ftitle">Leylet Raqs</h2>
+    <p class="ftag">Ghent's international Raqs Sharqi festival — workshops, live music and a galashow, in the heart of the city.</p>
+    <div class="fstats">
+      <span class="fstat"><span class="dot"></span>4 editions since 2023</span>
+      <span class="fstat"><span class="dot"></span>Curated by Lenka Badriyah</span>
+    </div>
+    <a class="fcta" href="leylet-raqs/">Explore Leylet Raqs <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+
+<!-- ═══ GHENT TAP FESTIVAL ═══ -->
+<section class="fsection teal reveal-section">
+  <div class="fbg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/poster-ghent-tap-loop.jpg">
+      <source src="assets/ghent-tap-loop.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <div class="fscrim teal"></div>
+  <div class="wrap fcontent">
+    <p class="feyebrow">Tap dance</p>
+    <h2 class="ftitle">Ghent Tap Festival</h2>
+    <p class="ftag">Two full days of tap — workshops across every level and an evening performance that fills the Shoonya stage.</p>
+    <div class="fstats">
+      <span class="fstat"><span class="dot"></span>4 editions since 2023</span>
+      <span class="fstat"><span class="dot"></span>Hosted by Tapdance Promotion</span>
+    </div>
+    <a class="fcta" href="ghent-tap-festival/">Explore Ghent Tap Festival <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+
+<!-- ═══ GIDF ═══ -->
+<section class="fsection purple reveal-section">
+  <div class="fbg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/poster-gidf-loop.jpg">
+      <source src="assets/gidf-loop.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <div class="fscrim purple"></div>
+  <div class="wrap fcontent">
+    <p class="feyebrow">Indian dance</p>
+    <h2 class="ftitle">Gent India Dans Festival</h2>
+    <p class="ftag">Three days of Indian dance every May — workshops, a gala showcase and an opening party that runs until late.</p>
+    <div class="fstats">
+      <span class="fstat"><span class="dot"></span>4 editions since 2023</span>
+      <span class="fstat"><span class="dot"></span>Curated by Swapnil Dagliya</span>
+    </div>
+    <a class="fcta" href="gidf/">Explore GIDF <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>All three festivals are hosted at <a href="https://www.shoonyadance.com" target="_blank" rel="noopener noreferrer">Shoonya Dance Centre</a>, Stapelplein 41, 9000 Gent.</p>
+  </div>
+</footer>
+
+<script>
+var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* reduced motion — CSS hides the videos; this also stops playback + network fetch */
+if(reducedMotion){
+  document.querySelectorAll('video').forEach(function(v){
+    v.removeAttribute('autoplay'); v.preload='none'; v.pause();
+  });
+}
+
+/* opening hero — cycle through the 3 festival videos, crossfading on each loop */
+(function(){
+  if(reducedMotion) return;
+  var bg = document.getElementById('openingBg');
+  if(!bg) return;
+  var videos = Array.prototype.slice.call(bg.querySelectorAll('video'));
+  if(!videos.length) return;
+  var i = 0;
+  videos[0].play().catch(function(){});
+  function next(){
+    var current = videos[i];
+    i = (i + 1) % videos.length;
+    var upcoming = videos[i];
+    upcoming.currentTime = 0;
+    upcoming.play().catch(function(){});
+    upcoming.classList.add('active');
+    current.classList.remove('active');
+    setTimeout(function(){ current.pause(); }, 1300);
+  }
+  videos.forEach(function(v){ v.addEventListener('ended', next); });
+})();
+
+(function(){
+  var els = document.querySelectorAll('.reveal-section');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in')}); return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -12% 0px', threshold:0.15});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

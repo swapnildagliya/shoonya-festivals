@@ -51,7 +51,7 @@
     "addressLocality": "Gent",
     "addressCountry": "BE"
   },
-  "sameAs": [ "https://www.instagram.com/shoonyadance" ]
+  "sameAs": [ "https://www.instagram.com/shoonyadance", "https://www.instagram.com/leylet_raqs_festival" ]
 }
 </script>
 <!-- JSON-LD: FAQPage -->
@@ -63,32 +63,76 @@
     {
       "@type": "Question",
       "name": "What is Leylet Raqs?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Leylet Raqs — 'Night of Dance' — is Ghent's annual international Raqs Sharqi (Egyptian bellydance) festival, curated by Lenka Badriyah and co-organised with Shoonya Dance Centre. Each edition is a weekend of workshops, lectures, live music and performance celebrating the heritage of Egyptian dance, with guest teachers from across the world." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Leylet Raqs — \"Night of Dance\" — is Ghent's annual international Raqs Sharqi (Egyptian bellydance) festival, curated by Lenka Badriyah and co-organised with Shoonya Dance Centre. Each edition is a weekend of workshops, lectures, live music and performance celebrating the heritage of Egyptian dance, with guest teachers from across the world." }
     },
     {
       "@type": "Question",
       "name": "Is Leylet Raqs a bellydance festival?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Raqs Sharqi is the traditional Egyptian form of bellydance, so Leylet Raqs is at heart an international bellydance festival — bringing teachers and dancers from across the world to Ghent every year. 'Raqs Sharqi' literally means 'dance of the East' and is simply the dance's Egyptian name." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Raqs Sharqi is the traditional Egyptian form of bellydance, so Leylet Raqs is at heart an international bellydance festival — bringing teachers and dancers from across the world to Ghent every year. \"Raqs Sharqi\" literally means \"dance of the East\" and is simply the dance's Egyptian name." }
     },
     {
       "@type": "Question",
       "name": "Who is the festival for?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Everyone. Workshops run from first steps to advanced, and the lectures, showcase and parties welcome dancers and dance-lovers alike. All levels are welcome." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Everyone. Workshops run from first steps to advanced, and the lectures, shows and parties welcome dancers and dance-lovers alike. All levels are welcome." }
     },
     {
       "@type": "Question",
-      "name": "Where does Leylet Raqs take place?",
+      "name": "Where does it take place?",
       "acceptedAnswer": { "@type": "Answer", "text": "At Shoonya Dance Centre, Stapelplein 41, 9000 Gent — a ten-minute walk from Gent-Dampoort station." }
     },
     {
       "@type": "Question",
       "name": "When is the next edition?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Leylet Raqs is held annually, typically in autumn or winter. Dates for the next edition are announced on Instagram @leylet_raqs_festival." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Leylet Raqs is held annually. Dates vary by edition and are announced on Instagram @leylet_raqs_festival first." }
     },
     {
       "@type": "Question",
       "name": "How do I register?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Registration opens together with each edition's programme, through Shoonya. A Shoonya ID is required for every participant, and you can create one for free when registration opens." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Registration opens together with each edition's programme, through Shoonya. A Shoonya ID is required for every participant — you can create one for free when registration opens." }
+    }
+  ]
+}
+</script>
+<!-- JSON-LD: EventSeries — past/current editions only, no future dates -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EventSeries",
+  "name": "Leylet Raqs",
+  "url": "https://festivals.shoonyadance.com/leylet-raqs/",
+  "location": {
+    "@type": "Place",
+    "name": "Shoonya Dance Centre",
+    "address": { "@type": "PostalAddress", "streetAddress": "Stapelplein 41", "postalCode": "9000", "addressLocality": "Gent", "addressCountry": "BE" }
+  },
+  "subEvent": [
+    {
+      "@type": "Event",
+      "name": "Leylet Raqs — Edition One: Where it all began",
+      "startDate": "2023-02-17",
+      "endDate": "2023-02-19",
+      "location": { "@type": "Place", "name": "Shoonya Dance Centre", "address": { "@type": "PostalAddress", "streetAddress": "Stapelplein 41", "postalCode": "9000", "addressLocality": "Gent", "addressCountry": "BE" } }
+    },
+    {
+      "@type": "Event",
+      "name": "Leylet Raqs — Edition Two: Golden Era, Egyptian folklore, and the veil",
+      "startDate": "2024-02-23",
+      "endDate": "2024-02-25",
+      "location": { "@type": "Place", "name": "Shoonya Dance Centre", "address": { "@type": "PostalAddress", "streetAddress": "Stapelplein 41", "postalCode": "9000", "addressLocality": "Gent", "addressCountry": "BE" } }
+    },
+    {
+      "@type": "Event",
+      "name": "Leylet Raqs — Edition Three: All forms of love",
+      "startDate": "2025-11-14",
+      "endDate": "2025-11-16",
+      "location": { "@type": "Place", "name": "Shoonya Dance Centre", "address": { "@type": "PostalAddress", "streetAddress": "Stapelplein 41", "postalCode": "9000", "addressLocality": "Gent", "addressCountry": "BE" } }
+    },
+    {
+      "@type": "Event",
+      "name": "Leylet Raqs Heritage — Edition Four",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-31",
+      "location": { "@type": "Place", "name": "Shoonya Dance Centre", "address": { "@type": "PostalAddress", "streetAddress": "Stapelplein 41", "postalCode": "9000", "addressLocality": "Gent", "addressCountry": "BE" } }
     }
   ]
 }
@@ -102,8 +146,8 @@
    White is loudest on dark/pomegranate (D-057). One vibrant per surface (D-035).
    ═══════════════════════════════════════════════════════════════ */
 :root{
-  --pom:#C13B5A; --pom-deep:#A62E48; --pom-ink:#8C2238;
-  --white:#FFFFFF; --ink:#000000; --body:#454545; --muted:#7A7A7A;
+  --pom:#C13B5A; --pom-ink:#8C2238;
+  --white:#FFFFFF; --ink:#000000; --body:#454545; --muted:#6B6B6B;
   --dark:#000000; --hair:#E6E2DE; --hair-dk:rgba(255,255,255,.14);
   --serif:"Playfair Display",Georgia,"Times New Roman",serif;
   --body-serif:"PT Serif",Georgia,"Times New Roman",serif;
@@ -131,7 +175,6 @@ a{color:inherit;text-decoration:none}
 .eyebrow{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--pom-ink)}
 h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;color:var(--ink);line-height:1.06;letter-spacing:-.012em}
 h2{font-size:var(--h2)}
-.iserif{font-family:var(--serif);font-style:italic;font-weight:400}
 em{font-style:italic}
 
 /* layout */
@@ -150,8 +193,6 @@ em{font-style:italic}
 .btn:hover{background:var(--pom);color:#fff}
 .btn--solid{background:var(--pom);color:#fff}
 .btn--solid:hover{background:transparent;color:#fff}
-.btn--dark{border-color:var(--pom);color:var(--ink)}
-.btn--dark:hover{background:var(--pom);color:#fff;border-color:var(--pom)}
 .btn svg{width:16px;height:16px}
 
 /* ── NAV ── */
@@ -167,13 +208,14 @@ em{font-style:italic}
 .nav-lang{font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.55)}
 .nav-lang .on{color:#fff}
 .nav-lang a:hover{color:#fff}
-@media(max-width:760px){.nav-links a.hide-sm{display:none}}
+@media(max-width:760px){.nav-links a.hide-sm{display:none}.nav-links{gap:10px}.nav-links a{font-size:11px}}
 
 /* ── HERO ── */
 .hero{position:relative;min-height:clamp(580px,94vh,880px);display:flex;align-items:center;background:var(--dark);overflow:hidden}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.5}
 .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(20,4,9,.6))}
 .hero-scrim.bottom{background:linear-gradient(0deg,rgba(0,0,0,.92),rgba(0,0,0,0) 50%)}
+.hero-credit{position:absolute;right:14px;bottom:12px;z-index:3;font-family:var(--sans);font-size:9.5px;letter-spacing:.04em;color:rgba(255,255,255,.55);text-shadow:0 1px 2px rgba(0,0,0,.5)}
 .hero .wrap{position:relative;z-index:2;width:100%;padding-top:54px;padding-bottom:54px}
 .hero-eyebrow{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#E7A6B4;margin-bottom:22px}
 .hero h1{color:#fff;font-size:var(--hero);max-width:12ch;letter-spacing:-.02em;text-transform:uppercase;font-weight:700;line-height:.94}
@@ -194,7 +236,6 @@ em{font-style:italic}
 .about-credit{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);line-height:1.85;margin-top:28px}
 .about-figure{position:relative}
 .about-figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 24%}
-.about-figure figcaption{font-family:var(--sans);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:10px}
 @media(max-width:780px){.about-grid{grid-template-columns:1fr;gap:36px}.about-figure{order:-1}.about-figure img{aspect-ratio:3/2;object-position:center 28%}}
 
 /* ── WORKSHOPS (dark) ── */
@@ -299,11 +340,11 @@ em{font-style:italic}
     <span class="nav-lr-word">Raqs</span>
   </a>
   <nav class="nav-links" aria-label="Primary">
-    <a class="hide-sm" href="#festival">The festival</a>
+    <a href="#festival">The festival</a>
     <a class="hide-sm" href="#workshops">Workshops</a>
     <a class="hide-sm" href="#curator">Curator</a>
     <a class="hide-sm" href="#editions">Past editions</a>
-    <a class="hide-sm" href="#faq">FAQ</a>
+    <a href="#faq">FAQ</a>
     <a class="nav-cta" href="#join">Stay informed →</a>
     <span class="nav-lang"><span class="on">EN</span> · <a href="nl/">NL</a></span>
   </nav>
@@ -311,9 +352,10 @@ em{font-style:italic}
 
 <!-- ═══ HERO ═══ -->
 <section class="hero" aria-label="Leylet Raqs">
-  <img class="hero-bg" src="assets/hero.jpg" alt="" fetchpriority="high"/>
+  <img class="hero-bg" src="assets/hero.jpg" alt="" fetchpriority="high" width="1400" height="933"/>
   <div class="hero-scrim"></div>
   <div class="hero-scrim bottom"></div>
+  <span class="hero-credit">© Stijn Dejonckheere</span>
   <div class="wrap">
     <p class="hero-eyebrow">Ghent's International Bellydance Festival</p>
     <h1><span class="word">Leylet</span> <span class="word">Raqs</span></h1>
@@ -339,7 +381,7 @@ em{font-style:italic}
       <p class="about-credit">Curated by Lenka Badriyah<br>Co-organised with Shoonya Dance Centre · Ghent</p>
     </div>
     <figure class="about-figure reveal">
-      <img src="assets/lenka-red.jpg" alt="Lenka Badriyah, curator and bellydance teacher, performing Raqs Sharqi at Leylet Raqs in Ghent" loading="lazy"/>
+      <img src="assets/lenka-red.jpg" alt="Lenka Badriyah, curator and bellydance teacher, performing Raqs Sharqi at Leylet Raqs in Ghent" loading="lazy" width="1000" height="1400"/>
     </figure>
   </div>
 </section>
@@ -409,7 +451,7 @@ em{font-style:italic}
 <section class="section cur" id="curator">
   <div class="wrap cur-grid">
     <figure class="cur-figure reveal">
-      <img src="assets/lenka.jpg" alt="Lenka Badriyah, curator of Leylet Raqs" loading="lazy"/>
+      <img src="assets/lenka.jpg" alt="Lenka Badriyah, curator of Leylet Raqs" loading="lazy" width="934" height="1400"/>
       <figcaption>© Isabelle Hanneuse</figcaption>
     </figure>
     <div class="reveal">
@@ -439,7 +481,7 @@ em{font-style:italic}
           <p class="ed-year">2026</p>
           <p class="ed-edition">Edition Four · 29–31 May</p>
         </div>
-        <figure class="ed-photo"><img src="assets/editions/2026-nisaa.jpg" alt="Nisaa, guest teacher at Leylet Raqs Heritage 2026" loading="lazy"/></figure>
+        <figure class="ed-photo"><img src="assets/editions/2026-nisaa.jpg" alt="Promo card for Nisaa, guest teacher at the Leylet Raqs 2026 Heritage edition" loading="lazy" width="320" height="400"/></figure>
         <div class="ed-body">
           <h3>Leylet Raqs Heritage — the Muhammad Ali Street edition</h3>
           <p>A deeply nostalgic edition built around a world-unique museum exhibition — Lenka's own collection of over 400 Golden Era artefacts, from signed photographs of Samia Gamal to original vinyl and vintage postcards. Historians Nisaa and Reda Henkesh (himself from Cairo's Muhammad Ali Street) led lectures and workshops tracing Raqs Sharqi's roots through the awalim and Delta ghawazi, alongside a documentary screening and a theatre show blending live dance, music and archival projection.</p>
@@ -452,11 +494,12 @@ em{font-style:italic}
           <p class="ed-year">2025</p>
           <p class="ed-edition">Edition Three · 14–16 Nov</p>
         </div>
-        <figure class="ed-photo"><img src="assets/editions/2025-hendrik.jpg" alt="Hendrik Lebon performing at Leylet Raqs 2025" loading="lazy"/></figure>
+        <figure class="ed-photo"><img src="assets/editions/2025-hendrik.jpg" alt="Hendrik Lebon performing at Leylet Raqs 2025" loading="lazy" width="326" height="400"/></figure>
         <div class="ed-body">
           <h3>All forms of love</h3>
           <p>The festival introduced a Feedback Show in place of an open showcase — a non-competitive stage where performers received one-on-one feedback from the guest teachers. The Galashow's theme, "all forms of love," closed with guest performances from Swapnil Dagliya and the Palestinian dabke group ElKofieh48, alongside live music throughout.</p>
-          <p class="ed-faculty"><strong>Guest teachers</strong> — Mercedes Nieto · Lurdiana · Mohanned Hawaz · Hendrik Lebon · Osama Abdulrasol &amp; Jamal Moussaid (live music) · Lenka Badriyah</p>
+          <p class="ed-faculty"><strong>Guest teachers</strong> — Mercedes Nieto · Lurdiana · Mohanned Hawaz · Hendrik Lebon · Lenka Badriyah</p>
+          <p class="ed-faculty"><strong>Live music</strong> — Osama Abdulrasol (qanun) · Jamal Moussaid (tabla)</p>
         </div>
       </div>
 
@@ -465,7 +508,7 @@ em{font-style:italic}
           <p class="ed-year">2024</p>
           <p class="ed-edition">Edition Two · 23–25 Feb</p>
         </div>
-        <figure class="ed-photo"><img src="assets/editions/2024-julia-farid.jpg" alt="Julia Farid, guest teacher at Leylet Raqs 2024" loading="lazy"/></figure>
+        <figure class="ed-photo"><img src="assets/editions/2024-julia-farid.jpg" alt="Julia Farid, guest teacher at Leylet Raqs 2024" loading="lazy" width="400" height="400"/></figure>
         <div class="ed-body">
           <h3>Golden Era, Egyptian folklore, and the veil</h3>
           <p>Guest teachers travelled in from Ukraine, Italy, Belgium and Morocco — Golden Era style, veil technique, drum-solo fusion, and Baladi across the weekend. Lenka closed the workshops with a trio of Egyptian folk and character dances, and the festival closed with a discussion between two of its guest teachers.</p>
@@ -478,7 +521,7 @@ em{font-style:italic}
           <p class="ed-year">2023</p>
           <p class="ed-edition">Edition One · 17–19 Feb</p>
         </div>
-        <figure class="ed-photo"><img src="assets/editions/2023-lou-pradas.jpg" alt="Lou Pradas, guest teacher at Leylet Raqs 2023" loading="lazy"/></figure>
+        <figure class="ed-photo"><img src="assets/editions/2023-lou-pradas.jpg" alt="Lou Pradas, guest teacher at Leylet Raqs 2023" loading="lazy" width="290" height="400"/></figure>
         <div class="ed-body">
           <h3>Where it all began</h3>
           <p>The first Leylet Raqs — a lecture on Golden Era melodies, workshops on isolation technique and Oriental Romance, and a show built almost entirely from the community: dancers across all levels performing classical Raqs Sharqi, Egyptian folklore and fusion styles alongside the guest teachers.</p>
@@ -508,7 +551,7 @@ em{font-style:italic}
       </details>
       <details>
         <summary>Who is the festival for?</summary>
-        <div class="faq-a"><p>Everyone. Workshops run from first steps to advanced, and the lectures, showcase and parties welcome dancers and dance-lovers alike. All levels are welcome.</p></div>
+        <div class="faq-a"><p>Everyone. Workshops run from first steps to advanced, and the lectures, shows and parties welcome dancers and dance-lovers alike. All levels are welcome.</p></div>
       </details>
       <details>
         <summary>Where does it take place?</summary>
@@ -516,7 +559,7 @@ em{font-style:italic}
       </details>
       <details>
         <summary>When is the next edition?</summary>
-        <div class="faq-a"><p>Leylet Raqs is held annually, typically in autumn or winter. Dates for the next edition are announced on Instagram <a class="link" href="https://www.instagram.com/leylet_raqs_festival" target="_blank" rel="noopener noreferrer">@leylet_raqs_festival</a>.</p></div>
+        <div class="faq-a"><p>Leylet Raqs is held annually. Dates vary by edition and are announced on Instagram <a class="link" href="https://www.instagram.com/leylet_raqs_festival" target="_blank" rel="noopener noreferrer">@leylet_raqs_festival</a> first.</p></div>
       </details>
       <details>
         <summary>How do I register?</summary>
@@ -529,7 +572,7 @@ em{font-style:italic}
 
 <!-- ═══ JOIN / CTA ═══ -->
 <section class="section dark cta" id="join">
-  <img class="cta-bg" src="assets/veil.jpg" alt="" loading="lazy"/>
+  <img class="cta-bg" src="assets/veil.jpg" alt="" loading="lazy" width="1400" height="933"/>
   <div class="cta-scrim"></div>
   <div class="wrap reveal">
     <p class="eyebrow">Be part of it</p>
@@ -550,11 +593,13 @@ em{font-style:italic}
   <div class="wrap">
     <p class="foot-org">Leylet Raqs is curated by Lenka Badriyah and co-organised with Shoonya Dance Centre.</p>
     <p class="foot-label">
-      <img src="assets/shoonya-oo-mark-white.png" alt="">
+      <img src="assets/shoonya-oo-mark-white.png" alt="" width="2084" height="2084">
       Shoonya Dance Centre
-      <img src="assets/shoonya-oo-mark-white.png" alt="">
+      <img src="assets/shoonya-oo-mark-white.png" alt="" width="2084" height="2084">
     </p>
     <div class="foot-links">
+      <a href="/">All festivals</a>
+      <a href="https://www.shoonyadance.com" target="_blank" rel="noopener noreferrer">shoonyadance.com</a>
       <a href="https://www.instagram.com/shoonyadance" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></svg>
         @shoonyadance
