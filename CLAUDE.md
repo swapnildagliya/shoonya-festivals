@@ -118,6 +118,16 @@ The Google Drive contains a file named "Leylet Raqs 2022 Final Budget" — this 
 - Faculty rosters, Kathakali/Julien 2024, the Shampa visa mentions and the Swapnil Dec-2025 quote are all **confirmed by Swapnil 2026-08-01** — do not strip them as "unverifiable".
 - ⚠️ The archive photo `GF23 Stijn ABC/20230721-*` set and `ALT-opening-party-garba-group.jpg` are **Gentse Feesten, NOT GIDF** — never caption them as GIDF.
 
+## Groupe Furaya (2026-08-05)
+
+- Page: `groupe-furaya/` (EN) · `groupe-furaya/nl/` (NL). Public title: **African Dance and Percussion with Groupe Furaya**.
+- Event date/time: Saturday 19 September 2026, 19:00-21:30 at Shoonya Dance Centre, Gent.
+- Format: 19:00 ticketed performance (€20, 90 places), 20:30 free initiations open to everyone, including people without performance tickets.
+- Confirmed running order for initiations: Bawayi 20:30 traditional Congolese dance; Joseph 20:45 modern Ndombolo; Awa 21:00 dance from Burkina Faso.
+- Only one source video exists. Live asset `assets/performance-teaser.mp4` is a compressed/cropped 12-second derivative; keep a reduced-motion fallback and do not add autoplay video without the `prefers-reduced-motion` hide rule.
+- Do **not** use `IMG-20250726-WA0033.png` or `stage-group.jpg`; one face appears blurred/deleted and Swapnil explicitly rejected it for public use.
+- Interim CTA is the Shoonya contact page until Zoho/ticket setup exists. Do not restore inert “tickets soon” spans as the primary CTA.
+
 ## Hub (2026-08-01)
 
 - Root `index.html` + `assets/` (3 hero mp4s, 3 loop mp4s, 6 posters) are live; hub is in `sitemap.xml`.
