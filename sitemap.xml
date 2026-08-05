@@ -40,4 +40,16 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/gidf/nl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://festivals.shoonyadance.com/gidf/"/>
   </url>
+  <url>
+    <loc>https://festivals.shoonyadance.com/groupe-furaya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://festivals.shoonyadance.com/groupe-furaya/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/groupe-furaya/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://festivals.shoonyadance.com/groupe-furaya/"/>
+  </url>
+  <url>
+    <loc>https://festivals.shoonyadance.com/groupe-furaya/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://festivals.shoonyadance.com/groupe-furaya/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://festivals.shoonyadance.com/groupe-furaya/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://festivals.shoonyadance.com/groupe-furaya/"/>
+  </url>
 </urlset>

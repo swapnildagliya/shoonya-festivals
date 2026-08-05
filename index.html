@@ -4,13 +4,13 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta name="theme-color" content="#0A0A0A"/>
-<title>Shoonya Festivals — Bellydance, Tap &amp; Indian Dance in Ghent</title>
-<meta name="description" content="Three annual dance festivals at Shoonya Dance Centre, Ghent — Leylet Raqs (bellydance), the Ghent Tap Festival, and GIDF (Indian dance). Workshops, showcases and community, every year."/>
+<title>Shoonya Festivals &amp; Dance Events — Ghent</title>
+<meta name="description" content="Dance festivals and special performance events at Shoonya Dance Centre, Ghent — Leylet Raqs, Ghent Tap Festival, Gent India Dans Festival and selected cultural evenings."/>
 <link rel="canonical" href="https://festivals.shoonyadance.com/"/>
 <meta name="robots" content="index,follow"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Shoonya Festivals — Bellydance, Tap &amp; Indian Dance in Ghent"/>
-<meta property="og:description" content="Three annual dance festivals at Shoonya Dance Centre, Ghent. Workshops, showcases and community, every year."/>
+<meta property="og:title" content="Shoonya Festivals &amp; Dance Events — Ghent"/>
+<meta property="og:description" content="Dance festivals and special performance events at Shoonya Dance Centre, Ghent."/>
 <meta property="og:url" content="https://festivals.shoonyadance.com/"/>
 <meta property="og:site_name" content="Shoonya Festivals"/>
 <meta property="og:locale" content="en_BE"/>
@@ -70,6 +70,17 @@
       "description": "Three days of Indian dance every May — workshops, a gala showcase and an opening party that runs until late.",
       "location": { "@id": "https://www.shoonyadance.com/#place" },
       "organizer": { "@id": "https://www.shoonyadance.com/#organization" }
+    },
+    {
+      "@type": "Event",
+      "name": "African Dance and Percussion with Groupe Furaya",
+      "url": "https://festivals.shoonyadance.com/groupe-furaya/",
+      "description": "A performance of Congolese dance, song and live percussion at Shoonya, followed by three short African dance taster classes.",
+      "startDate": "2026-09-19T19:00:00+02:00",
+      "endDate": "2026-09-19T21:30:00+02:00",
+      "location": { "@id": "https://www.shoonyadance.com/#place" },
+      "organizer": { "@id": "https://www.shoonyadance.com/#organization" },
+      "performer": { "@type": "PerformingGroup", "name": "Groupe Furaya / MONYAMA" }
     }
   ]
 }
@@ -82,6 +93,7 @@
   --purple:#B564F7; --purple-ink:#D7AEF6;
   --pom:#E0577A; --pom-ink:#F0A6B8;
   --teal:#6FB7B1; --teal-ink:#9FD6D0;
+  --leaf:#0F5B4D; --leaf-ink:#A9D8C5;
   --white:#FFFFFF; --dark:#0A0A0A; --paper:#F7F0E6;
   --serif:"Playfair Display",Georgia,"Times New Roman",serif;
   --sans:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
@@ -100,6 +112,7 @@ img,video{display:block;max-width:100%}
   .fsection.pom .fbg{background-image:url('assets/poster-leylet-raqs-loop.jpg');background-size:cover;background-position:center}
   .fsection.teal .fbg{background-image:url('ghent-tap-festival/assets/hero-rehearsal-poster.jpg');background-size:cover;background-position:center}
   .fsection.purple .fbg{background-image:url('gidf/assets/opening-party-poster.jpg');background-size:cover;background-position:center}
+  .fsection.leaf .fbg{background-image:url('groupe-furaya/assets/hero.jpg');background-size:cover;background-position:center}
   .marquee-track{animation:none}
 }
 a{color:inherit;text-decoration:none}
@@ -144,12 +157,14 @@ a{color:inherit;text-decoration:none}
 .fscrim.pom{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(20,8,12,.42) 55%,rgba(20,8,12,.25))}
 .fscrim.teal{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(8,17,16,.42) 55%,rgba(8,17,16,.25))}
 .fscrim.purple{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(15,8,20,.42) 55%,rgba(15,8,20,.25))}
+.fscrim.leaf{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(5,28,24,.52) 55%,rgba(5,28,24,.28))}
 .fcontent{position:relative;z-index:2;width:100%;padding:clamp(48px,9vw,100px) 0 clamp(56px,9vw,96px)}
 .fcredit{position:absolute;right:14px;top:14px;z-index:3;font-family:var(--sans);font-size:9.5px;letter-spacing:.04em;color:rgba(255,255,255,.5)}
 .feyebrow{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:20px;opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .fsection.pom .feyebrow{color:var(--pom-ink)}
 .fsection.teal .feyebrow{color:var(--teal-ink)}
 .fsection.purple .feyebrow{color:var(--purple-ink)}
+.fsection.leaf .feyebrow{color:var(--leaf-ink)}
 .ftitle{font-family:var(--serif);font-weight:700;font-size:clamp(42px,8.4vw,108px);line-height:.98;letter-spacing:-.015em;max-width:14ch;opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease) .08s,transform .8s var(--ease) .08s}
 .ftag{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.1vw,23px);color:rgba(255,255,255,.85);max-width:46ch;margin:22px 0 30px;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease) .16s,transform .8s var(--ease) .16s}
 .fstats{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease) .22s,transform .8s var(--ease) .22s}
@@ -158,6 +173,7 @@ a{color:inherit;text-decoration:none}
 .fsection.pom .fstat .dot{background:var(--pom)}
 .fsection.teal .fstat .dot{background:var(--teal)}
 .fsection.purple .fstat .dot{background:var(--purple)}
+.fsection.leaf .fstat .dot{background:var(--leaf)}
 .fcta{display:inline-flex;align-items:center;gap:11px;font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:16px 30px;border:1px solid #fff;color:#fff;transition:background .3s,color .3s;opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease) .3s,transform .8s var(--ease) .3s,background .3s,color .3s}
 .fcta:hover{background:#fff;color:var(--dark)}
 .fcta svg{width:16px;height:16px;transition:transform .25s var(--ease)}
@@ -183,10 +199,10 @@ a{color:inherit;text-decoration:none}
   <div class="opening-scrim"></div>
   <p class="opening-eyebrow">Shoonya Dance Centre · Ghent, Belgium</p>
   <h1>
-    <span class="line"><span>Three festivals.</span></span>
+    <span class="line"><span>Festivals &amp; events.</span></span>
     <span class="line"><span class="accent">One dance floor.</span></span>
   </h1>
-  <p>Bellydance, tap, and Indian dance — a year-round calendar of workshops, showcases and community, all under one roof.</p>
+  <p>Bellydance, tap, Indian dance and special cultural evenings — workshops, showcases, performances and community, all under one roof.</p>
   <div class="scroll-cue"><span>Scroll</span><span class="bar"></span></div>
 </section>
 
@@ -202,6 +218,8 @@ a{color:inherit;text-decoration:none}
     <span>Paddle &amp; Roll</span><span class="dot">·</span>
     <span>Kathak</span><span class="dot">·</span>
     <span>Folklore</span><span class="dot">·</span>
+    <span>Ndombolo</span><span class="dot">·</span>
+    <span>Balafon</span><span class="dot">·</span>
     <span>Bhangra</span><span class="dot">·</span>
     <span>Raqs Sharqi</span><span class="dot">·</span>
     <span>Baladi</span><span class="dot">·</span>
@@ -212,6 +230,8 @@ a{color:inherit;text-decoration:none}
     <span>Paddle &amp; Roll</span><span class="dot">·</span>
     <span>Kathak</span><span class="dot">·</span>
     <span>Folklore</span><span class="dot">·</span>
+    <span>Ndombolo</span><span class="dot">·</span>
+    <span>Balafon</span><span class="dot">·</span>
     <span>Bhangra</span><span class="dot">·</span>
   </div>
 </div>
@@ -276,11 +296,30 @@ a{color:inherit;text-decoration:none}
     <a class="fcta" href="gidf/">Explore GIDF <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
 </section>
+
+<!-- ═══ GROUPE FURAYA ═══ -->
+<section class="fsection leaf reveal-section">
+  <div class="fbg" aria-hidden="true">
+    <img src="groupe-furaya/assets/hero.jpg" alt="" loading="lazy"/>
+  </div>
+  <div class="fscrim leaf"></div>
+  <div class="wrap fcontent">
+    <p class="feyebrow">Special performance · African dance</p>
+    <h2 class="ftitle">Groupe Furaya</h2>
+    <p class="ftag">A one-night performance of Congolese dance, song and live percussion, followed by three short initiation classes.</p>
+    <div class="fstats">
+      <span class="fstat"><span class="dot"></span>Sat 19 September</span>
+      <span class="fstat"><span class="dot"></span>Performance + tasters</span>
+      <span class="fstat"><span class="dot"></span>EUR 20</span>
+    </div>
+    <a class="fcta" href="groupe-furaya/">Explore Groupe Furaya <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <p>All three festivals are hosted at <a href="https://www.shoonyadance.com" target="_blank" rel="noopener noreferrer">Shoonya Dance Centre</a>, Stapelplein 41, 9000 Gent.</p>
+    <p>These festivals and dance events are hosted at <a href="https://www.shoonyadance.com" target="_blank" rel="noopener noreferrer">Shoonya Dance Centre</a>, Stapelplein 41, 9000 Gent.</p>
   </div>
 </footer>
 
