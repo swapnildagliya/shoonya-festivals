@@ -126,7 +126,9 @@ The Google Drive contains a file named "Leylet Raqs 2022 Final Budget" — this 
 - Confirmed running order for initiations: Bawayi 20:30 traditional Congolese dance; Joseph 20:45 modern Ndombolo; Awa 21:00 dance from Burkina Faso.
 - Only one source video exists. Live asset `assets/performance-teaser.mp4` is a compressed/cropped 12-second derivative; keep a reduced-motion fallback and do not add autoplay video without the `prefers-reduced-motion` hide rule.
 - Do **not** use `IMG-20250726-WA0033.png` or `stage-group.jpg`; one face appears blurred/deleted and Swapnil explicitly rejected it for public use.
-- Interim CTA is the Shoonya contact page until Zoho/ticket setup exists. Do not restore inert “tickets soon” spans as the primary CTA.
+- Interim CTA is the Shoonya contact page until Zoho/ticket setup exists. Do not restore inert “tickets soon” spans as the primary CTA. The tickets section has **one** CTA — do not add a second button pointing at the same URL.
+- **De-slop pass 2026-08-06.** Copy was rewritten to remove tautological cards, repeated "free / no ticket / open to everyone" restatements (13 → 3) and the uniform fragment headings. Rules to keep: no heading that is two clipped sentences ending in full stops; each initiation card describes what the participant actually does; every photo appears once (4 assets, no repeats). Page now carries `FAQPage` JSON-LD and the estate-standard footer.
+- **Hero video loads via `data-src`**, not a `<source>` tag: the script assigns `src` only when `prefers-reduced-motion` is *not* set, so reduced-motion visitors never download the 1.5 MB mp4 (the poster carries the frame). Do not revert to inline `src`/`autoplay`.
 
 ## Hub (2026-08-01)
 
