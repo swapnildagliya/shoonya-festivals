@@ -127,8 +127,20 @@ The Google Drive contains a file named "Leylet Raqs 2022 Final Budget" — this 
 - Only one source video exists. Live asset `assets/performance-teaser.mp4` is a compressed/cropped 12-second derivative; keep a reduced-motion fallback and do not add autoplay video without the `prefers-reduced-motion` hide rule.
 - Do **not** use `IMG-20250726-WA0033.png` or `stage-group.jpg`; one face appears blurred/deleted and Swapnil explicitly rejected it for public use.
 - Interim CTA is the Shoonya contact page until Zoho/ticket setup exists. Do not restore inert “tickets soon” spans as the primary CTA. The tickets section has **one** CTA — do not add a second button pointing at the same URL.
-- **De-slop pass 2026-08-06.** Copy was rewritten to remove tautological cards, repeated "free / no ticket / open to everyone" restatements (13 → 3) and the uniform fragment headings. Rules to keep: no heading that is two clipped sentences ending in full stops; each initiation card describes what the participant actually does; every photo appears once (4 assets, no repeats). Page now carries `FAQPage` JSON-LD and the estate-standard footer.
+### Redesign 2026-08-06 — Furaya has its own visual identity
+
+The page was rebuilt after Swapnil judged the shared brass/paper system to read as AI slop here. It now **deliberately deviates from the rest of the estate** (his call: "Furaya only for now"). Do not "restore consistency" with Leylet Raqs / Ghent Tap / GIDF unless he asks.
+
+- **Palette comes out of the photographs, not from the estate:** `--green:#063024` and `--green-deep:#04211A` (the grass), `--gold:#E4B34A` (raffia and headdresses), `--cream:#F7F2E6` / `--cream-2:#EFE7D5` paper. Body ink `#44564E` is a green-biased neutral, deliberately not a plain grey.
+- **Type is Furaya-only:** Instrument Serif (display) · DM Sans (body) · Roboto Mono (times on the spine). The house Playfair/PT Serif/Inter stack does **not** apply on this page.
+- **The evening is a timeline spine, not a card grid** — `#schedule` holds one `.row` per slot with a mono time column, and the three free initiations are `.row-free` (gold wash + `Free` tag). This is the page's structural idea: it encodes that the night turns into an open floor at a specific minute. `#initiations` anchors the first free row. Don't refactor these back into three cards.
+- **Every photo is used exactly once** — hero video (poster `performance-poster.jpg`), intro figure `green-portrait.jpg`, full-bleed band `energy.jpg`, gallery `hero.jpg` + `group-portrait.jpg`. There are only four stills, so any new section needs new photography, not a repeat.
+- **og-image is rendered from `_build/render.mjs`** (gitignored dir, recreate if missing) and matches the green/gold identity. Re-render it if the title or the hero photo changes.
+
+Copy rules that survived the earlier de-slop pass: no heading that is two clipped sentences ending in full stops; the "free / no ticket" fact appears about three times, not thirteen; each initiation line says what the participant actually does (no invented biography — none exists for Bawayi, Joseph or Awa).
+
 - **Hero video loads via `data-src`**, not a `<source>` tag: the script assigns `src` only when `prefers-reduced-motion` is *not* set, so reduced-motion visitors never download the 1.5 MB mp4 (the poster carries the frame). Do not revert to inline `src`/`autoplay`.
+- **`height="…"` attributes beat `aspect-ratio`.** Both cropping bugs on this page came from that: an `<img>` with a `height` attribute and `width:100%` uses the attribute height and ignores `aspect-ratio`. Any image styled with `aspect-ratio` needs an explicit `height:auto` (or `height:100%` when it should fill a grid row).
 
 ## Hub (2026-08-01)
 
