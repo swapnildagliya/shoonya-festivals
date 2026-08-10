@@ -423,14 +423,14 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 
     <div class="initiation-loop reveal" aria-label="Courte boucle vidéo de Groupe Furaya">
       <div>
-        <video controls loop playsinline preload="metadata" poster="../assets/initiations-loop-poster.jpg">
+        <video controls muted loop playsinline preload="auto" poster="../assets/initiations-loop-poster.jpg" data-autoplay-loop>
           <source src="../assets/initiations-loop.mp4" type="video/mp4"/>
         </video>
       </div>
       <div>
         <p class="eyebrow">Sur la piste</p>
         <h3>Le type de rythme dans lequel vous entrez à 20:30.</h3>
-        <p>Une courte boucle de Groupe Furaya avec le son live conservé : des pas simples, une énergie de réponse collective, et la salle qui bouge ensemble. Arrivez simplement à 20:30 ; aucune inscription n’est nécessaire.</p>
+        <p>Une courte boucle de Groupe Furaya : des pas simples, une énergie de réponse collective, et la salle qui bouge ensemble. La vidéo joue ici sans son ; activez le son si vous voulez entendre le rythme live. Arrivez simplement à 20:30 ; aucune inscription n’est nécessaire.</p>
       </div>
     </div>
   </div>
@@ -521,6 +521,10 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   document.querySelectorAll('video[data-src]').forEach(function(v){
     v.src=v.dataset.src; v.autoplay=true; v.load();
+    var play=v.play(); if(play&&play.catch){play.catch(function(){});}
+  });
+  document.querySelectorAll('video[data-autoplay-loop]').forEach(function(v){
+    v.autoplay=true; v.muted=true; v.load();
     var play=v.play(); if(play&&play.catch){play.catch(function(){});}
   });
 }
