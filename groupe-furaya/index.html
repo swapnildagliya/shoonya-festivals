@@ -312,12 +312,19 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 .spine-note{display:grid;grid-template-columns:132px minmax(0,1fr);gap:clamp(14px,3vw,42px);padding:24px 0 0}
 .spine-note .time{font-family:var(--mono);font-size:15px;font-weight:500;color:var(--gold-deep)}
 .spine-note p{max-width:56ch}
+.initiation-loop{display:grid;grid-template-columns:minmax(260px,.88fr) minmax(0,1fr);gap:clamp(20px,4vw,54px);
+  align-items:center;margin-top:34px;padding-top:32px;border-top:1px solid var(--rule)}
+.initiation-loop video{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--green-deep);
+  border:1px solid rgba(18,36,30,.18)}
+.initiation-loop h3{font-size:clamp(25px,3vw,42px);color:var(--ink);margin-top:14px;max-width:13ch}
+.initiation-loop p:not(.eyebrow){margin-top:14px;max-width:42ch}
 .link{color:var(--gold-deep);border-bottom:1.5px solid var(--gold-deep);padding-bottom:1px}
 .link:hover{color:var(--ink);border-color:var(--ink)}
 @media(max-width:820px){
   .row,.spine-note{grid-template-columns:1fr;gap:10px}
   .row .time,.spine-note .time{padding-top:0}
   .row-free{padding-left:14px;padding-right:14px;margin:0 -14px}
+  .initiation-loop{grid-template-columns:1fr}
 }
 
 /* ═══ TICKETS ═══ */
@@ -386,7 +393,7 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 <!-- ═══ HERO ═══ -->
 <section class="hero" aria-label="African Dance and Percussion with Groupe Furaya">
   <div class="hero-copy">
-    <p class="eyebrow eyebrow-gold">Saturday 19 September 2026 · Shoonya Dance Centre, Gent</p>
+    <p class="eyebrow eyebrow-gold">Saturday 19 September 2026 · Shoonya Dance Centre, Ghent</p>
     <div class="hero-rule"></div>
     <h1>African Dance and Percussion<em>with Groupe Furaya</em></h1>
     <p class="hero-lede">Seventy minutes of Congolese repertoire — dance, song, tam-tams, lokole and balafon, all played live. Then the stage is cleared and the floor opens.</p>
@@ -478,6 +485,19 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
       <p class="time">Free entry</p>
       <p>The three initiations from 20:30 are free and need no ticket. Each one lasts fifteen minutes and is taught from zero — come for one, or stay for all three.</p>
     </div>
+
+    <div class="initiation-loop reveal" aria-label="Short looping clip from Groupe Furaya">
+      <div>
+        <video controls loop playsinline preload="metadata" poster="assets/initiations-loop-poster.jpg">
+          <source src="assets/initiations-loop.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div>
+        <p class="eyebrow">From the floor</p>
+        <h3>The kind of rhythm you step into at 20:30.</h3>
+        <p>A short loop from Groupe Furaya with the live sound kept in: simple steps, call-and-response energy, and the room moving together after the performance.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -492,7 +512,7 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
     <div class="practical">
       <div class="pfact reveal"><span>Date</span><strong>Sat 19 Sep 2026</strong></div>
       <div class="pfact reveal"><span>Time</span><strong>19:00–21:30</strong></div>
-      <div class="pfact reveal"><span>Venue</span><strong>Shoonya, Gent</strong></div>
+      <div class="pfact reveal"><span>Venue</span><strong>Shoonya, Ghent</strong></div>
       <div class="pfact reveal"><span>Performance</span><strong>€20</strong></div>
       <div class="pfact reveal"><span>Initiations</span><strong>Free</strong></div>
     </div>
@@ -539,7 +559,7 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 <!-- ═══ FOOTER ═══ -->
 <footer class="foot" id="contact">
   <div class="wrap">
-    <p class="foot-org">African Dance and Percussion with Groupe Furaya is a one-night event hosted by Shoonya Dance Centre in Gent.</p>
+    <p class="foot-org">African Dance and Percussion with Groupe Furaya is a one-night event hosted by Shoonya Dance Centre in Ghent.</p>
     <p class="foot-label">
       <img src="assets/shoonya-oo-mark-white.png" alt="" width="2084" height="2084">
       Shoonya Dance Centre

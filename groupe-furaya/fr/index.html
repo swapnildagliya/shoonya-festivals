@@ -176,7 +176,7 @@
     {
       "@type": "Question",
       "name": "Où se trouve Shoonya ?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Shoonya Dance Centre se trouve au Stapelplein 41, 9000 Gand, à quelques minutes à pied de la gare Gent-Dampoort."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Shoonya Dance Centre se trouve au Stapelplein 41, 9000 Gent, à quelques minutes à pied de la gare Gent-Dampoort."}
     }
   ]
 }
@@ -312,12 +312,19 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 .spine-note{display:grid;grid-template-columns:132px minmax(0,1fr);gap:clamp(14px,3vw,42px);padding:24px 0 0}
 .spine-note .time{font-family:var(--mono);font-size:15px;font-weight:500;color:var(--gold-deep)}
 .spine-note p{max-width:56ch}
+.initiation-loop{display:grid;grid-template-columns:minmax(260px,.88fr) minmax(0,1fr);gap:clamp(20px,4vw,54px);
+  align-items:center;margin-top:34px;padding-top:32px;border-top:1px solid var(--rule)}
+.initiation-loop video{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--green-deep);
+  border:1px solid rgba(18,36,30,.18)}
+.initiation-loop h3{font-size:clamp(25px,3vw,42px);color:var(--ink);margin-top:14px;max-width:13ch}
+.initiation-loop p:not(.eyebrow){margin-top:14px;max-width:42ch}
 .link{color:var(--gold-deep);border-bottom:1.5px solid var(--gold-deep);padding-bottom:1px}
 .link:hover{color:var(--ink);border-color:var(--ink)}
 @media(max-width:820px){
   .row,.spine-note{grid-template-columns:1fr;gap:10px}
   .row .time,.spine-note .time{padding-top:0}
   .row-free{padding-left:14px;padding-right:14px;margin:0 -14px}
+  .initiation-loop{grid-template-columns:1fr}
 }
 
 /* ═══ TICKETS ═══ */
@@ -478,6 +485,19 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
       <p class="time">Entrée gratuite</p>
       <p>Les trois initiations à partir de 20:30 sont gratuites et ne nécessitent pas de ticket. Chacune dure quinze minutes et commence depuis zéro — venez pour une seule, ou restez pour les trois.</p>
     </div>
+
+    <div class="initiation-loop reveal" aria-label="Courte boucle vidéo de Groupe Furaya">
+      <div>
+        <video controls loop playsinline preload="metadata" poster="../assets/initiations-loop-poster.jpg">
+          <source src="../assets/initiations-loop.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div>
+        <p class="eyebrow">Sur la piste</p>
+        <h3>Le type de rythme dans lequel vous entrez à 20:30.</h3>
+        <p>Une courte boucle de Groupe Furaya avec le son live conservé : des pas simples, une énergie de réponse collective, et la salle qui bouge ensemble après le spectacle.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -530,7 +550,7 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
       <details><summary>Quelles langues seront utilisées ?</summary><p>Joseph enseignera dans un format multilingue, Bawayi en français, et Awa en anglais et en français.</p></details>
       <details><summary>Y a-t-il une limite de capacité pour les initiations gratuites ?</summary><p>La salle de Shoonya peut accueillir 90 personnes. L’accès aux initiations de 20:30 dépendra de la capacité sûre de la salle le soir même.</p></details>
       <details><summary>Que faut-il porter ?</summary><p>Portez des vêtements confortables dans lesquels vous pouvez bouger. Vous pouvez danser pieds nus ou avec des chaussures de danse propres pour l’intérieur.</p></details>
-      <details><summary>Où se trouve Shoonya ?</summary><p>Shoonya Dance Centre se trouve au Stapelplein 41, 9000 Gand, à quelques minutes à pied de la gare Gent-Dampoort.</p></details>
+      <details><summary>Où se trouve Shoonya ?</summary><p>Shoonya Dance Centre se trouve au Stapelplein 41, 9000 Gent, à quelques minutes à pied de la gare Gent-Dampoort.</p></details>
     </div>
   </div>
 </section>
@@ -554,7 +574,7 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
       <a href="https://www.shoonyadance.com/contact" target="_blank" rel="noopener noreferrer">Contactez-nous</a>
     </div>
     <div class="foot-meta">
-      <span>Shoonya Dance Centre · Stapelplein 41, 9000 Gand · 10 min à pied de Gent-Dampoort</span>
+      <span>Shoonya Dance Centre · Stapelplein 41, 9000 Gent · 10 min à pied de Gent-Dampoort</span>
       <span><a href="../">English version</a> · <a href="../nl/">Nederlandse versie</a></span>
     </div>
     <p class="foot-copy">© Danse africaine et percussion avec Groupe Furaya · Shoonya Dance Centre</p>

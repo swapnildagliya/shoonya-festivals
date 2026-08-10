@@ -127,6 +127,7 @@ The Google Drive contains a file named "Leylet Raqs 2022 Final Budget" — this 
 - Multiple video items were found later: one Drive video is already downloaded and used for `assets/performance-teaser.mp4`; another Drive video and one Gmail-attached MP4 are not locally downloaded yet. Keep a reduced-motion fallback and do not add autoplay video without the `prefers-reduced-motion` hide rule.
 - Do **not** use `IMG-20250726-WA0033.png` or `stage-group.jpg`; one face appears blurred/deleted and Swapnil explicitly rejected it for public use.
 - Ticket CTA is the Zoho Creator ticket form. Do not restore the old Shoonya-contact waitlist CTA or inert “tickets soon” spans as the primary CTA. The tickets section has **one** CTA — do not add a second button pointing at the same URL.
+- The initiations section includes `assets/initiations-loop.mp4`, a 00:07-00:21 clip from the downloaded Facebook video. It is intentionally **not autoplaying**; it has controls, sound, and `loop`, so users can play it with audio and it repeats. Source is low-res SD, so keep it contextual rather than promoting it to the hero.
 ### Redesign 2026-08-06 — Furaya has its own visual identity
 
 The page was rebuilt after Swapnil judged the shared brass/paper system to read as AI slop here. It now **deliberately deviates from the rest of the estate** (his call: "Furaya only for now"). Do not "restore consistency" with Leylet Raqs / Ghent Tap / GIDF unless he asks.
