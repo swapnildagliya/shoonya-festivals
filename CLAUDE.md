@@ -120,13 +120,13 @@ The Google Drive contains a file named "Leylet Raqs 2022 Final Budget" — this 
 
 ## Groupe Furaya (2026-08-05)
 
-- Page: `groupe-furaya/` (EN) · `groupe-furaya/nl/` (NL). Public title: **African Dance and Percussion with Groupe Furaya**.
+- Page: `groupe-furaya/` (EN) · `groupe-furaya/nl/` (NL) · `groupe-furaya/fr/` (FR). Public title: **African Dance and Percussion with Groupe Furaya**.
 - Event date/time: Saturday 19 September 2026, 19:00-21:30 at Shoonya Dance Centre, Gent.
 - Format: 19:00 ticketed performance (€20, 90 places), 20:30 free initiations open to everyone, including people without performance tickets.
 - Confirmed running order for initiations: Bawayi 20:30 traditional Congolese dance; Joseph 20:45 modern Ndombolo; Awa 21:00 dance from Burkina Faso.
-- Only one source video exists. Live asset `assets/performance-teaser.mp4` is a compressed/cropped 12-second derivative; keep a reduced-motion fallback and do not add autoplay video without the `prefers-reduced-motion` hide rule.
+- Multiple video items were found later: one Drive video is already downloaded and used for `assets/performance-teaser.mp4`; another Drive video and one Gmail-attached MP4 are not locally downloaded yet. Keep a reduced-motion fallback and do not add autoplay video without the `prefers-reduced-motion` hide rule.
 - Do **not** use `IMG-20250726-WA0033.png` or `stage-group.jpg`; one face appears blurred/deleted and Swapnil explicitly rejected it for public use.
-- Interim CTA is the Shoonya contact page until Zoho/ticket setup exists. Do not restore inert “tickets soon” spans as the primary CTA. The tickets section has **one** CTA — do not add a second button pointing at the same URL.
+- Ticket CTA is the Zoho Creator ticket form. Do not restore the old Shoonya-contact waitlist CTA or inert “tickets soon” spans as the primary CTA. The tickets section has **one** CTA — do not add a second button pointing at the same URL.
 ### Redesign 2026-08-06 — Furaya has its own visual identity
 
 The page was rebuilt after Swapnil judged the shared brass/paper system to read as AI slop here. It now **deliberately deviates from the rest of the estate** (his call: "Furaya only for now"). Do not "restore consistency" with Leylet Raqs / Ghent Tap / GIDF unless he asks.
