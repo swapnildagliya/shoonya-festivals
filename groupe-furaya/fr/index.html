@@ -51,7 +51,7 @@
   "maximumAttendeeCapacity": 90,
   "location": {
     "@type": "Place",
-    "name": "Shoonya Dance Centre",
+    "name": "Shoonya Theatre, Shoonya Dance Centre",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Stapelplein 41",
@@ -86,7 +86,7 @@
       "maximumAttendeeCapacity": 90,
       "location": {
         "@type": "Place",
-        "name": "Shoonya Dance Centre",
+        "name": "Studio Ananta, Shoonya Dance Centre",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Stapelplein 41",
@@ -105,7 +105,7 @@
       "maximumAttendeeCapacity": 90,
       "location": {
         "@type": "Place",
-        "name": "Shoonya Dance Centre",
+        "name": "Studio Ananta, Shoonya Dance Centre",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Stapelplein 41",
@@ -124,7 +124,7 @@
       "maximumAttendeeCapacity": 90,
       "location": {
         "@type": "Place",
-        "name": "Shoonya Dance Centre",
+        "name": "Studio Ananta, Shoonya Dance Centre",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Stapelplein 41",
@@ -145,13 +145,13 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Est-ce un atelier ou un spectacle ?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Le cœur de la soirée est un spectacle. Les trois courtes initiations ont lieu après la représentation."}
+      "name": "Puis-je venir uniquement pour les initiations gratuites ?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Oui. Les portes rouvrent à 20:30 et les initiations sont gratuites ; vous n’avez pas besoin d’un ticket pour le spectacle de 19:00."}
     },
     {
       "@type": "Question",
-      "name": "Puis-je venir uniquement pour les initiations gratuites ?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Oui. Les portes rouvrent à 20:30 et les initiations sont gratuites ; vous n’avez pas besoin d’un ticket pour le spectacle de 19:00."}
+      "name": "Le spectacle et les initiations sont-ils au même endroit ?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ils sont dans le même bâtiment de Shoonya, au Stapelplein 41. Le spectacle a lieu au Shoonya Theatre ; les initiations ont lieu au Studio Ananta, au rez-de-chaussée."}
     },
     {
       "@type": "Question",
@@ -165,18 +165,8 @@
     },
     {
       "@type": "Question",
-      "name": "Y a-t-il une limite de capacité pour les initiations gratuites ?",
-      "acceptedAnswer": {"@type": "Answer", "text": "La salle de Shoonya peut accueillir 90 personnes. L’accès aux initiations de 20:30 dépendra de la capacité sûre de la salle le soir même."}
-    },
-    {
-      "@type": "Question",
       "name": "Que faut-il porter ?",
       "acceptedAnswer": {"@type": "Answer", "text": "Portez des vêtements confortables dans lesquels vous pouvez bouger. Vous pouvez danser pieds nus ou avec des chaussures de danse propres pour l’intérieur."}
-    },
-    {
-      "@type": "Question",
-      "name": "Où se trouve Shoonya ?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Shoonya Dance Centre se trouve au Stapelplein 41, 9000 Gent, à quelques minutes à pied de la gare Gent-Dampoort."}
     }
   ]
 }
@@ -264,14 +254,8 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.015em;line-
   .hero-copy{padding:clamp(38px,7vw,60px) var(--gutter)}
 }
 
-/* ═══ FULL-BLEED BAND ═══ */
-.band{position:relative;height:clamp(280px,40vw,520px);overflow:hidden;background:var(--green-deep)}
-.band img{width:100%;height:100%;object-fit:cover;object-position:50% 34%}
-.band::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,33,26,.86),rgba(4,33,26,0) 56%)}
-.band figcaption{position:absolute;left:var(--gutter);bottom:20px;z-index:2;
-  font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dim)}
-
 /* ═══ SECTIONS ═══ */
+section[id]{scroll-margin-top:74px}
 .section{padding:var(--sec-y) 0}
 .section-dark{background:var(--green);color:var(--cream-dim)}
 .section-dark h2,.section-dark h3{color:var(--cream)}
@@ -309,9 +293,6 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 .row-free .time{font-weight:700;color:var(--gold-deep)}
 .freetag{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
   background:var(--green);color:var(--gold);padding:5px 9px;margin-left:10px;vertical-align:3px}
-.spine-note{display:grid;grid-template-columns:132px minmax(0,1fr);gap:clamp(14px,3vw,42px);padding:24px 0 0}
-.spine-note .time{font-family:var(--mono);font-size:15px;font-weight:500;color:var(--gold-deep)}
-.spine-note p{max-width:56ch}
 .initiation-loop{display:grid;grid-template-columns:minmax(260px,.88fr) minmax(0,1fr);gap:clamp(20px,4vw,54px);
   align-items:center;margin-top:34px;padding-top:32px;border-top:1px solid var(--rule)}
 .initiation-loop video{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--green-deep);
@@ -321,8 +302,8 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 .link{color:var(--gold-deep);border-bottom:1.5px solid var(--gold-deep);padding-bottom:1px}
 .link:hover{color:var(--ink);border-color:var(--ink)}
 @media(max-width:820px){
-  .row,.spine-note{grid-template-columns:1fr;gap:10px}
-  .row .time,.spine-note .time{padding-top:0}
+  .row{grid-template-columns:1fr;gap:10px}
+  .row .time{padding-top:0}
   .row-free{padding-left:14px;padding-right:14px;margin:0 -14px}
   .initiation-loop{grid-template-columns:1fr}
 }
@@ -333,13 +314,7 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 .pfact{padding:clamp(22px,3vw,32px);background:var(--green)}
 .pfact span{display:block;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(228,179,74,.82);margin-bottom:10px}
 .pfact strong{display:block;font-family:var(--display);font-weight:400;font-size:clamp(23px,2.5vw,32px);line-height:1.08;color:var(--cream)}
-
-/* ═══ GALLERY ═══ */
-.gallery{display:grid;grid-template-columns:1.28fr .72fr;gap:clamp(12px,1.4vw,20px)}
-.gallery img{width:100%;object-fit:cover}
-.gallery-main{height:auto;aspect-ratio:1.22}
-.gallery-side{height:100%}
-@media(max-width:800px){.gallery{grid-template-columns:1fr}.gallery-main,.gallery-side{height:auto;aspect-ratio:4/3}}
+.room-note{margin-top:18px;max-width:68ch;color:rgba(247,242,230,.72)}
 
 /* ═══ FAQ ═══ */
 .faq{max-width:880px}
@@ -414,76 +389,36 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
 
 <main id="event">
 
-<!-- ═══ INTRO ═══ -->
-<section class="section">
-  <div class="wrap intro-grid">
-    <div class="copy reveal">
-      <p class="eyebrow">Groupe Furaya</p>
-      <p class="statement">Une soirée de danse congolaise : <em>d’abord sur scène, puis avec vous sur la piste.</em></p>
-      <p>Groupe Furaya réunit danse, chant, percussions et balafon dans un style qui circule entre formes traditionnelles et contemporaines. Le spectacle s’appuie sur des rythmes et chants traditionnels de la République démocratique du Congo, portés par des instruments live comme les tam-tams, le lokole, les maracas, le balafon et d’autres percussions.</p>
-      <p>La soirée commence comme un vrai spectacle : une œuvre scénique de 70 minutes avec danseurs, chanteurs et musiciens. Après une courte transition, trois artistes du groupe guident de brèves initiations pour permettre au public de vivre les rythmes par le mouvement.</p>
-      <p>Vous pouvez prendre un ticket pour le spectacle de 19:00, ou simplement arriver à 20:30 pour les initiations gratuites.</p>
-    </div>
-    <figure class="reveal">
-      <img src="../assets/green-portrait.jpg" alt="Trois artistes de Groupe Furaya dans un décor extérieur vert" loading="lazy" decoding="async" width="900" height="1200"/>
-      <figcaption class="caption">Photos partagées par Groupe Furaya pour la promotion de Shoonya</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ═══ FULL-BLEED BAND ═══ -->
-<figure class="band">
-  <img src="../assets/energy.jpg" alt="Artistes de Groupe Furaya en costumes traditionnels, en plein mouvement" loading="lazy" decoding="async" width="835" height="1200"/>
-  <figcaption>Groupe Furaya</figcaption>
-</figure>
-
 <!-- ═══ THE EVENING — timeline ═══ -->
 <section class="section section-alt" id="schedule">
   <div class="wrap">
     <div class="spine-head reveal">
-      <h2>La soirée, heure par heure</h2>
-      <span class="where">Shoonya Dance Centre · Stapelplein 41</span>
+      <h2>Comment se déroule la soirée</h2>
+      <span class="where">Shoonya Dance Centre · Stapelplein 41, 9000 Gent</span>
     </div>
 
     <div class="row reveal">
       <p class="time">19:00</p>
-      <div><h3>Le spectacle</h3><p class="who">Payant · €20 · 90 places</p></div>
-      <p>Danseurs, chanteurs et musiciens ensemble : chants et rythmes traditionnels de la République démocratique du Congo, joués en live sur scène.</p>
+      <div><h3>Spectacle</h3><p class="who">Shoonya Theatre · payant · €20</p></div>
+      <p>Soixante-dix minutes de danse congolaise, chant, tam-tams, lokole et balafon au Shoonya Theatre, dans le bâtiment de Shoonya lui-même.</p>
     </div>
 
     <div class="row reveal">
       <p class="time">20:10</p>
-      <div><h3>Pause</h3></div>
-      <p>La scène se libère et la piste s’ouvre.</p>
+      <div><h3>Transition</h3></div>
+      <p>Le spectacle se termine et la soirée passe du théâtre à la participation.</p>
     </div>
 
     <div class="row row-free reveal" id="initiations">
       <p class="time">20:30</p>
-      <div><h3>Danse traditionnelle congolaise<span class="freetag">Gratuit</span></h3><p class="who">Bawayi · en français</p></div>
-      <p>Les pas qui nourrissent le spectacle, ralentis et comptés étape par étape.</p>
-    </div>
-
-    <div class="row row-free reveal">
-      <p class="time">20:45</p>
-      <div><h3>Ndombolo moderne<span class="freetag">Gratuit</span></h3><p class="who">Joseph · format multilingue</p></div>
-      <p>La danse des fêtes de Kinshasa : hanches rapides, genoux souples et beaucoup de groove.</p>
-    </div>
-
-    <div class="row row-free reveal">
-      <p class="time">21:00</p>
-      <div><h3>Danse du Burkina Faso<span class="freetag">Gratuit</span></h3><p class="who">Awa · anglais &amp; français</p></div>
-      <p>Cap à l’ouest pour les quinze dernières minutes, vers une autre famille de rythmes et de pas.</p>
+      <div><h3>Initiations gratuites<span class="freetag">Gratuit</span></h3><p class="who">Studio Ananta · rez-de-chaussée</p></div>
+      <p>Aucun ticket nécessaire. Trois courtes initiations : danse traditionnelle congolaise avec Bawayi, Ndombolo moderne avec Joseph, et danse du Burkina Faso avec Awa.</p>
     </div>
 
     <div class="row reveal">
       <p class="time">21:15–21:30</p>
       <div><h3>Clôture</h3></div>
       <p>Les initiations se terminent et les portes ferment à 21:30.</p>
-    </div>
-
-    <div class="spine-note reveal">
-      <p class="time">Entrée gratuite</p>
-      <p>Les trois initiations à partir de 20:30 sont gratuites et ne nécessitent pas de ticket. Chacune dure quinze minutes et commence depuis zéro — venez pour une seule, ou restez pour les trois.</p>
     </div>
 
     <div class="initiation-loop reveal" aria-label="Courte boucle vidéo de Groupe Furaya">
@@ -501,37 +436,39 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
   </div>
 </section>
 
+<!-- ═══ ABOUT ═══ -->
+<section class="section">
+  <div class="wrap intro-grid">
+    <div class="copy reveal">
+      <p class="eyebrow">Groupe Furaya</p>
+      <p class="statement">Danse congolaise, chant et rythme live — <em>assez proche pour y entrer.</em></p>
+      <p>Groupe Furaya réunit danse, chant, percussions et balafon dans un style qui circule entre formes traditionnelles et contemporaines. Le spectacle s’appuie sur des rythmes et chants traditionnels de la République démocratique du Congo, portés par des instruments live comme les tam-tams, le lokole, les maracas et le balafon.</p>
+    </div>
+    <figure class="reveal">
+      <img src="../assets/green-portrait.jpg" alt="Trois artistes de Groupe Furaya dans un décor extérieur vert" loading="lazy" decoding="async" width="900" height="1200"/>
+      <figcaption class="caption">Photos partagées par Groupe Furaya pour la promotion de Shoonya</figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- ═══ TICKETS ═══ -->
 <section class="section section-dark" id="tickets">
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Tickets</p>
-      <h2>€20 pour le spectacle, gratuit après 20:30</h2>
-      <p>Réservez votre place pour le spectacle de 19:00. Les initiations à partir de 20:30 restent gratuites et ouvertes à tout le monde, sans ticket pour le spectacle.</p>
+      <h2>Réservez le spectacle. Rejoignez librement les initiations.</h2>
+      <p>Le ticket de €20 concerne le spectacle de 19:00. Les initiations de 20:30 sont gratuites et ouvertes à tout le monde, y compris aux personnes qui n’ont pas assisté au spectacle.</p>
     </div>
     <div class="practical">
       <div class="pfact reveal"><span>Date</span><strong>Sam 19 sep 2026</strong></div>
-      <div class="pfact reveal"><span>Horaire</span><strong>19:00–21:30</strong></div>
-      <div class="pfact reveal"><span>Lieu</span><strong>Shoonya, Gand</strong></div>
-      <div class="pfact reveal"><span>Spectacle</span><strong>€20</strong></div>
-      <div class="pfact reveal"><span>Initiations</span><strong>Gratuit</strong></div>
+      <div class="pfact reveal"><span>Spectacle</span><strong>Shoonya Theatre</strong></div>
+      <div class="pfact reveal"><span>Initiations</span><strong>Studio Ananta</strong></div>
+      <div class="pfact reveal"><span>Adresse</span><strong>Stapelplein 41</strong></div>
+      <div class="pfact reveal"><span>Ticket</span><strong>€20</strong></div>
     </div>
+    <p class="room-note reveal">Les deux salles se trouvent dans le même bâtiment de Shoonya. Studio Ananta est au rez-de-chaussée du Shoonya Dance Centre.</p>
     <div class="actions reveal">
       <a class="btn" href="https://creatorapp.zohopublic.eu/developer_shoonyadance/shoonya-dance-studio/form-perma/Ticket_Registration_Form/uw8PV66d5s2Z5z2G04kXNwjhGMA3B6vBpBWX6NSUC9Ybb0eyb4tUTbNTh0teeDSbAB5O6jnU4wPy67fT7feU3s7h1pyxe2mEtsu4" target="_blank" rel="noopener noreferrer">Acheter un ticket</a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ GALLERY ═══ -->
-<section class="section">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">Atmosphère</p>
-      <h2>Groupe Furaya, sur scène et ailleurs</h2>
-    </div>
-    <div class="gallery reveal">
-      <img class="gallery-main" src="../assets/hero.jpg" alt="Danseurs de Groupe Furaya pendant une représentation en extérieur" loading="lazy" decoding="async" width="1400" height="918"/>
-      <img class="gallery-side" src="../assets/group-portrait.jpg" alt="Portrait de groupe de Groupe Furaya en extérieur" loading="lazy" decoding="async" width="799" height="1058"/>
     </div>
   </div>
 </section>
@@ -544,13 +481,11 @@ figure img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
       <h2>Questions pratiques</h2>
     </div>
     <div class="faq reveal">
-      <details><summary>Est-ce un atelier ou un spectacle ?</summary><p>Le cœur de la soirée est un spectacle. Les trois courtes initiations ont lieu après la représentation.</p></details>
       <details><summary>Puis-je venir uniquement pour les initiations gratuites ?</summary><p>Oui. Les portes rouvrent à 20:30 et les initiations sont gratuites ; vous n’avez pas besoin d’un ticket pour le spectacle de 19:00.</p></details>
+      <details><summary>Le spectacle et les initiations sont-ils au même endroit ?</summary><p>Ils sont dans le même bâtiment de Shoonya, au Stapelplein 41. Le spectacle a lieu au Shoonya Theatre ; les initiations ont lieu au Studio Ananta, au rez-de-chaussée.</p></details>
       <details><summary>Faut-il avoir de l’expérience en danse ?</summary><p>Non. Chaque initiation dure 15 minutes et commence depuis zéro.</p></details>
       <details><summary>Quelles langues seront utilisées ?</summary><p>Joseph enseignera dans un format multilingue, Bawayi en français, et Awa en anglais et en français.</p></details>
-      <details><summary>Y a-t-il une limite de capacité pour les initiations gratuites ?</summary><p>La salle de Shoonya peut accueillir 90 personnes. L’accès aux initiations de 20:30 dépendra de la capacité sûre de la salle le soir même.</p></details>
       <details><summary>Que faut-il porter ?</summary><p>Portez des vêtements confortables dans lesquels vous pouvez bouger. Vous pouvez danser pieds nus ou avec des chaussures de danse propres pour l’intérieur.</p></details>
-      <details><summary>Où se trouve Shoonya ?</summary><p>Shoonya Dance Centre se trouve au Stapelplein 41, 9000 Gent, à quelques minutes à pied de la gare Gent-Dampoort.</p></details>
     </div>
   </div>
 </section>
