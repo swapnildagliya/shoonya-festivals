@@ -125,7 +125,7 @@ section[id]{scroll-margin-top:0}
 
 .bar{position:absolute;top:0;left:0;right:0;z-index:10;color:var(--paper);background:linear-gradient(rgba(18,18,18,.5),rgba(18,18,18,0))}
 .intro{display:none}
-.intro-on .intro{display:grid;position:fixed;inset:0;z-index:200;background:var(--ink);place-items:center;transition:transform .9s cubic-bezier(.77,0,.18,1)}
+.intro-on .intro{display:grid;position:fixed;inset:0;z-index:200;background:var(--ink);place-items:center;transition:transform .5s cubic-bezier(.77,0,.18,1);cursor:pointer}
 .intro-on.intro-out .intro{transform:translateY(-100%)}
 .intro-box{width:min(76vw,620px)}
 .intro-logo{position:relative;width:100%;aspect-ratio:1952/104}
@@ -134,10 +134,10 @@ section[id]{scroll-margin-top:0}
 .intro-logo .w2{clip-path:inset(-20% 45% -20% 34.6%)}
 .intro-logo .w3{clip-path:inset(-20% 0 -20% 55.2%)}
 .intro-line{display:block;height:3px;background:var(--teal);margin-top:22px;transform:scaleX(0);transform-origin:left}
-.intro-on .intro-logo .w1{animation:hit .38s cubic-bezier(.2,.9,.3,1.2) .25s forwards}
-.intro-on .intro-logo .w2{animation:stomp .42s cubic-bezier(.2,.9,.3,1.3) .55s forwards}
-.intro-on .intro-logo .w3{animation:hit .38s cubic-bezier(.2,.9,.3,1.2) .85s forwards}
-.intro-on .intro-line{animation:grow .7s cubic-bezier(.6,0,.2,1) 1.05s forwards}
+.intro-on .intro-logo .w1{animation:hit .28s cubic-bezier(.2,.9,.3,1.2) .1s forwards}
+.intro-on .intro-logo .w2{animation:stomp .3s cubic-bezier(.2,.9,.3,1.3) .3s forwards}
+.intro-on .intro-logo .w3{animation:hit .28s cubic-bezier(.2,.9,.3,1.2) .5s forwards}
+.intro-on .intro-line{animation:grow .45s cubic-bezier(.6,0,.2,1) .55s forwards}
 @keyframes hit{to{opacity:1;transform:none}}
 @keyframes stomp{0%{opacity:1;transform:translateY(-10px) scaleY(1.08)}60%{transform:translateY(3px) scaleY(.94)}100%{opacity:1;transform:none}}
 @keyframes grow{to{transform:scaleX(1)}}
@@ -294,7 +294,7 @@ html.sdc-nav-on section[id]{scroll-margin-top:132px}
 <script src="https://links.shoonyadance.com/sdc-nav-sub.js" defer></script>
 </head>
 <body id="top">
-<script>(function(){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches||sessionStorage.getItem('gtf-intro'))return;sessionStorage.setItem('gtf-intro','1')}catch(e){return}var h=document.documentElement;h.classList.add('intro-on');setTimeout(function(){h.classList.add('intro-out')},2100);setTimeout(function(){h.classList.remove('intro-on','intro-out')},3100)})();</script>
+<script>(function(){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches||sessionStorage.getItem('gtf-intro'))return;sessionStorage.setItem('gtf-intro','1')}catch(e){return}var h=document.documentElement;h.classList.add('intro-on');var out=0;function go(){if(out)return;out=1;h.classList.add('intro-out');setTimeout(function(){h.classList.remove('intro-on','intro-out')},550)}setTimeout(go,1200);['click','keydown','touchstart','wheel'].forEach(function(e){addEventListener(e,go,{once:true,passive:true})})})();</script>
 <div class="intro" aria-hidden="true"><div class="intro-box"><div class="intro-logo"><img class="w1" src="assets/gtf-horizontal-white.svg" alt=""><img class="w2" src="assets/gtf-horizontal-white.svg" alt=""><img class="w3" src="assets/gtf-horizontal-white.svg" alt=""></div><span class="intro-line"></span></div></div>
 <a class="skip" href="#main">Skip to content</a>
 
