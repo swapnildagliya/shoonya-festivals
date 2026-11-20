@@ -458,7 +458,78 @@ html.sdc-nav-on section[id]{scroll-margin-top:132px}
      ]
    };
 */
-const TIMETABLE = { confirmed: false, days: [] };
+const TIMETABLE = {
+ "confirmed": true,
+ "days": [
+  {
+   "label": "Saturday 6 March",
+   "rows": [
+    {
+     "time": "10:00–11:30",
+     "name": "Daniel Borak",
+     "level": "Intermediate"
+    },
+    {
+     "time": "11:45–13:15",
+     "name": "Daniel Borak",
+     "level": "Advanced"
+    },
+    {
+     "time": "13:30–15:00",
+     "name": "Tommaso Maria Parazzoli",
+     "level": "Advanced beginners"
+    },
+    {
+     "time": "15:15–16:45",
+     "name": "Tommaso Maria Parazzoli",
+     "level": "Intermediate–advanced"
+    },
+    {
+     "time": "17:00–18:00",
+     "name": "Free taster class",
+     "level": "with Teddy Robinet · for people who have never tapped"
+    },
+    {
+     "time": "20:00",
+     "type": "show",
+     "name": "Wooden Impact",
+     "title": "Ta-Bamm!!!",
+     "level": "Theater Scala"
+    }
+   ]
+  },
+  {
+   "label": "Sunday 7 March",
+   "rows": [
+    {
+     "time": "10:00–11:30",
+     "name": "Daniel Borak",
+     "level": "Intermediate–advanced"
+    },
+    {
+     "time": "11:45–13:15",
+     "name": "Manuel Leuenberger",
+     "level": "The Architecture of Rhythm · all levels"
+    },
+    {
+     "time": "13:30–15:00",
+     "name": "Daniel Borak",
+     "level": "Advanced beginners"
+    },
+    {
+     "time": "15:15–16:45",
+     "name": "Tommaso Maria Parazzoli",
+     "level": "Intermediate"
+    },
+    {
+     "time": "17:00–18:00",
+     "name": "Tommaso Maria Parazzoli",
+     "level": "Advanced"
+    }
+   ]
+  }
+ ]
+};
 (function(){
   var host=document.getElementById('tt-days'), note=document.getElementById('tt-note');
   if(!host||!TIMETABLE.confirmed||!TIMETABLE.days||!TIMETABLE.days.length) return;
